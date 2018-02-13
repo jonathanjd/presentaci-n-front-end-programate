@@ -1219,8 +1219,214 @@
                     <a href="https://css-tricks.com/bem-101/" target="_blank">Here</a>
                 </section>
             </section>
-            <section data-background-video="video/Sketch.mp4" data-background-video-loop="true">
-                <h3>Desarrollo del Proyecto</h3>
+            <section>
+
+                <section data-background-video="video/Sketch.mp4" data-background-video-loop="true">
+                    <h3>Desarrollo del Proyecto</h3>
+                </section>
+
+                <section>
+                    <p><i class="fab fa-sass"></i></p>
+                    <h3>Configurando Gulp</h3>
+                    <pre>
+                        <code class="javascript" data-trim data-noescape>
+                            var gulp = require("gulp");
+                            var browserSync = require("browser-sync").create();
+                            var sass = require('gulp-sass');
+                            var autoprefixer = require('gulp-autoprefixer');
+
+                            gulp.task("serve", ['sass'], function() {
+
+                            browserSync.init({
+                                server: "./"
+                            });
+
+                            gulp.watch("app/scss/*.scss", ['sass']);
+
+                            gulp.watch("./*.html").on("change", browserSync.reload);
+                            });
+
+                            gulp.task('sass', function() {
+                            gulp.src('./sass/*.scss')
+                                .pipe(sass())
+                                .pipe(autoprefixer({
+                                    versions: ['last 2 browsers']
+                                }))
+                                .pipe(gulp.dest('./css'));
+                            });
+
+                            gulp.task('watch', function(){
+                            gulp.watch(['./sass/*.scss'], ['sass']);
+                            });
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <p><i class="fab fa-html5"></i></p>
+                    <h3>Base HTML</h3>
+                    <pre>
+                        <code class="html" data-trim data-noescape>
+                                &lt;!DOCTYPE html&gt;
+                                &lt;html lang="en"&gt;
+                                  &lt;head&gt;
+                                    &lt;meta charset="utf-8"&gt;
+                                    &lt;meta name="description" content="Wensite with html5, css3, jquery & bootstrap"&gt;
+                                    &lt;meta name="keywords" content="html5, css3, jquery, bootstrap"&gt;
+                                    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+                                    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+                                    &lt;!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags --&gt;
+                                    &lt;title&gt;Vesco&lt;/title&gt;
+                                    &lt;!--
+                                    &lt;link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet"&gt;
+                                    --&gt;
+                                    &lt;!-- Bootstrap --&gt;
+                                    &lt;link href="css/bootstrap.css" rel="stylesheet"&gt;
+
+                                    &lt;!-- Font Awesome --&gt;
+                                    &lt;link rel="stylesheet" href="css/font-awesome.css"&gt;
+
+                                    &lt;!-- Animate CSS --&gt;
+                                    &lt;link rel="stylesheet" href="css/animate.css"&gt;
+
+                                    &lt;!-- My Magnific-PopUp CSS --&gt;
+                                    &lt;link rel="stylesheet" href="css/magnific-popup.css"&gt;
+
+                                    &lt;!-- Owl Carousel CSS --&gt;
+                                    &lt;link rel="stylesheet" href="css/owl.carousel.min.css"&gt;
+                                    &lt;link rel="stylesheet" href="css/owl.theme.default.min.css"&gt;
+
+                                    &lt;!-- My Style --&gt;
+                                    &lt;link rel="stylesheet" href="css/style.css"&gt;
+                                    &lt;!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries --&gt;
+                                    &lt;!-- WARNING: Respond.js doesn't work if you view the page via file:// --&gt;
+                                    &lt;!--[if lt IE 9]&gt;
+                                      &lt;script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"&gt;&lt;/script&gt;
+                                      &lt;script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"&gt;&lt;/script&gt;
+                                    &lt;![endif]--&gt;
+                                  &lt;/head&gt;
+                                  &lt;body&gt;
+
+
+
+                                    &lt;!-- jQuery (necessary for Bootstrap's JavaScript plugins) --&gt;
+                                    &lt;script src="js/jquery.js"&gt;&lt;/script&gt;
+                                    &lt;!-- Include all compiled plugins (below), or include individual files as needed --&gt;
+                                    &lt;script src="js/bootstrap.js"&gt;&lt;/script&gt;
+                                    &lt;!-- WOW --&gt;
+                                    &lt;script src="js/wow.min.js"&gt;&lt;/script&gt;
+                                    &lt;!-- My Magnific-PopUp JS --&gt;
+                                    &lt;script src="js/jquery.magnific-popup.min.js"&gt;&lt;/script&gt;
+
+                                    &lt;!-- Owl Carousel CSS --&gt;
+                                    &lt;script src="js/owl.carousel.min.js"&gt;&lt;/script&gt;
+
+                                    &lt;!-- Counter --&gt;
+                                    &lt;script src="js/jquery.waypoints.min.js"&gt;&lt;/script&gt;
+                                    &lt;script src="js/jquery.counterup.min.js"&gt;&lt;/script&gt;
+
+                                    &lt;script src="js/custom.js"&gt;&lt;/script&gt;
+                                  &lt;/body&gt;
+                                &lt;/html&gt;
+
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <p><i class="fa fa-download"></i></p>
+                    <h3>Import Plugins</h3>
+                </section>
+
+                <section>
+                    <p><i class="fa fa-folder"></i></p>
+                    <h3>Aplicando SMACSS</h3>
+                </section>
+
+                <section data-background-image="img/estructura.png" data-background-size="auto" data-menu-title="Estructura SASS">
+
+                </section>
+
+            </section>
+            <section>
+                <section>
+                    <p><i class="fa fa-paint-brush"></i></p>
+                    <h1>Sección Home</h1>
+                </section>
+                <section>
+                    <p><i class="fa fa-paint-brush"></i></p>
+                    <h3>Mis Variables</h3>
+                    <p><i class="fa fa-file"> _variables.scss</i></p>
+                    <pre>
+                        <code class="css" data-trim data-noescape>
+                                //Font Family
+                                $font: 'Roboto Condensed', sans-serif;
+                                //Color
+                                $mediumTurquoise: #34C6D3;
+                                $steelGrey: #41464B;
+                                $blueBayoux: #64707B;
+                                $white: #fff;
+                                $black: #000;
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <p><i class="fa fa-paint-brush"></i></p>
+                    <h3>Font Family</h3>
+                    <p><a href="https://fonts.google.com/" target="_blank">Google Fonts</a></p>
+                    <p>Roboto Condensed</p>
+                </section>
+                <section>
+                    <p><i class="fa fa-paint-brush"></i></p>
+                    <h3>Colores</h3>
+                    <p><a href="https://coolors.co/" target="_blank">Coolors</a></p>
+                    <p><a href="http://www.color-blindness.com/" target="_blank">Color Blindness</a></p>
+                </section>
+                <section>
+                    <p><i class="fa fa-paint-brush"></i></p>
+                    <h3>Import Variables</h3>
+                    <p><i class="fa fa-file"> style.scss</i></p>
+                    <pre>
+                        <code class="css" data-trim data-noescape>
+                            @import 'variables';
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <h3><i class="fa fa-paint-brush"></i> Mi Base Setup</h3>
+                    <p><i class="fa fa-file"> _base.scss</i></p>
+                    <pre>
+                        <code class="css" data-trim data-noescape>
+                                html {
+                                    height: 100%;
+                                }
+                                body {
+                                    @extend html;
+                                    font-family: $font;
+                                }
+
+                                p {
+                                    color: $blueBayoux;
+                                    font-size: 16px;
+                                    font-weight: 300;
+                                }
+
+                                h3 {
+                                    color: $steelGrey;
+                                    text-transform: uppercase;
+                                }
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <p><i class="fa fa-paint-brush"></i></p>
+                    <h3>Import Base</h3>
+                    <p><i class="fa fa-file"> style.scss</i></p>
+                    <pre>
+                        <code class="css" data-trim data-noescape>
+                            @import 'variables';
+                            @import 'base/base';
+                        </code>
+                    </pre>
+                </section>
             </section>
         </div>
     </div>
