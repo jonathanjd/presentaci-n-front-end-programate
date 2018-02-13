@@ -1087,6 +1087,138 @@
                         </pre>
                 </section>
             </section>
+            <section>
+                <section>
+                    <p><i class="fab fa-css3"></i></p>
+                    <h1>Arquitectura CSS</h1>
+                </section>
+                <section>
+                    <p><i class="fab fa-css3"></i></p>
+                    <h3><a href="https://smacss.com/" target="_blank">SMACSS</a></h3>
+                </section>
+                <section>
+                    <h3>Qué es SMACSS?</h3>
+                    <p>Desarrollado por Jonathan Snook, el método SMACSS consiste en organizar las reglas CSS en cinco categorías</p>
+                </section>
+                <section>
+                    <h3>Categorías</h3>
+                    <ul>
+                        <li>Básico</li>
+                        <li>Maquetación/Disposición</li>
+                        <li>Módulo</li>
+                        <li>Estado</li>
+                        <li>Tema</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Básico</h3>
+                    <p>Los estilos por defecto. Dentro de ellos están casi exclusivamente selectores de etiqueta, aunque a veces también se incluyen atributos, pseudoelementos, selectores hijos o padres. Se puede decir que es lo que habitualmente usamos como reset.css o normalize.css.</p>
+                </section>
+                <section>
+                    <h3>Maquetación</h3>
+                    <p>Divide el contenido en secciones, entendiendo que dentro de cada sección el contenido se dividirá en módulos. Serían las reglas para contenedores, rejillas, etc.</p>
+                </section>
+                <section>
+                    <h3>Módulo</h3>
+                    <p>Aquellos componentes que pueden ser reutilizados.</p>
+                </section>
+                <section>
+                    <h3>Estado</h3>
+                    <p>Las reglas que nos marcan el estado de nuestros módulos. Por ejemplo, el estado activo de un botón. También se incluyen dentro de esta categoría los estados de un módulo que tiene diferente aspecto según el lugar en el que se encuentre dentro del site.</p>
+                </section>
+                <section>
+                    <h3>Tema</h3>
+                    <p>Es una categoría opcional. Incluiría los estilos más visuales dentro del proyecto, que pueden estar ya incluidos dentro de las otras clases, pero que por las necesidades del proyecto, se agrupan dentro de un tema para su mejor uso.</p>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <p><i class="fab fa-css3"></i></p>
+                    <h1>Metodología</h1>
+                </section>
+                <section>
+                    <p><i class="fab fa-css3"></i></p>
+                    <h1><a href="http://getbem.com/" target="_blank">BEM</a></h1>
+                </section>
+                <section>
+                    <h3>Qué es BEM?</h3>
+                    <p>Desarrollada por la empresa rusa Yandex, es una metodología que busca el desarrollo de proyectos de una manera rápida y cuyo mantenimiento sea más sencillo, por muchos años.</p>
+                    <p>Lo primero que has de saber de BEM es que no utiliza etiquetas HTML o IDs como selectores, sino que los bloques y los elementos están definidos por selectores de clase.</p>
+                </section>
+                <section>
+                    <h3>Bloque</h3>
+                    <p>Es el componente lógico y de funcionalidad independiente de una página, el equivalente a un componente en Web Components. La clase para el bloque suele ser corta y específica. Por ejemplo: .header. Los bloques pueden ser anidados dentro de otros bloques.</p>
+                </section>
+                <section>
+                    <h3>Bloque HTML</h3>
+                    <pre>
+                        <code class="html" data-trim data-noescape>
+                                &lt;div class="block"&gt;...&lt;/div&gt;
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <h3>Bloque CSS</h3>
+                    <pre>
+                        <code class="css" data-trim data-noescape>
+                            .block { color: #042; }
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <h3>Elemento</h3>
+                    <p>Son las partes del bloque que cumplen una función sólo dentro de ellos. La clase para el elemento lleva el nombre del bloque seguido tras dos guiones bajos, del nombre del elemento. Por ejemplo: .header__logo.</p>
+                </section>
+                <section>
+                    <h3>Elemento HTML</h3>
+                    <pre>
+                        <code class="html" data-trim data-noescape>
+                                &lt;div class="block"&gt;
+                                    ...
+                                    &lt;span class="block__elem"&gt;&lt;/span&gt;
+                                &lt;/div&gt;
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <h3>Elemento CSS</h3>
+                    <pre>
+                        <code class="css" data-trim data-noescape>
+                            .block__elem { color: #042; }
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <h3>Modificador</h3>
+                    <p>Nos permite crear un bloque o elemento similar a otro existente tanto en apariencia como en comportamiento. La clase para el modificador está compuesta por la del elemento seguida de dos guiones y el nombre del modificador. Por ejemplo: .header__logo--active.</p>
+                </section>
+                <section>
+                    <h3>Modificadores HTML</h3>
+                    <pre>
+                        <code class="html" data-trim data-noescape>
+                                &lt;div class="block block--mod"&gt;
+                                    ...
+                                &lt;/div&gt;
+                                &lt;div class="block block--size-big block--shadow-yes"&gt;
+                                    ...
+                                &lt;/div&gt;
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <h3>Modificadores CSS</h3>
+                    <pre>
+                        <code class="css" data-trim data-noescape>
+                            .block__elem--mod { }
+                            .block--hidden { }
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <h3>BEM + Ejemplo</h3>
+                    <a href="https://css-tricks.com/bem-101/" target="_blank">Here</a>
+                </section>
+            </section>
         </div>
     </div>
 
