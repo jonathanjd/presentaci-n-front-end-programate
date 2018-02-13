@@ -1,54 +1,1130 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Front-End 3</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+    <title>Front-End 3</title>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section data-background-video="video/Love-Coding/MP4/Love-Coding.mp4" data-background-video-loop="true">
-					<h1>Front-End</h1>
-					<h3>Nivel 3</h3>
-				</section>
-				<section>
-					<h1>Contenido</h1>
-				</section>
-			</div>
-		</div>
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+    <!-- Awesome Font -->
+    <link rel="stylesheet" href="css/awesome-font/fontawesome-all.css">
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section data-background-video="video/Love-Coding/MP4/Love-Coding.mp4" data-background-video-loop="true" data-menu-title="Curso Front-End *3">
+                <h1>FRONT-END</h1>
+                <h3>DISEÑO WEB NIVEL III</h3>
+            </section>
+
+            <section>
+                <section data-menu-title="Prosefor">
+                    <h1>Jonathan Duran</h1>
+                    <h3>Desarrollador Full Stack</h3>
+                    <p>
+                        <i class="far fa-envelope"></i> HeadJD@gmail.com</p>
+                    <p>
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/jonathanjd" target="_blank">JonathanJD</a>
+                    </p>
+                </section>
+                <section data-menu-title="Conocimientos">
+                    <ul>
+                        <li>Laravel(Framework PHP)</li>
+                        <li>Base de Datos(MySQL)</li>
+                        <li>VueJS(Framework JS)</li>
+                        <li>Bootstrap(Framework CSS)</li>
+                        <li>Git(GitHub/GitLab)</li>
+                    </ul>
+                </section>
+                <section data-background-image="img/alumnos.png" data-background-size="auto" data-menu-title="Programate">
+                    <h5 style="color:rgb(66, 175, 250)">Programate</h5>
+                </section>
+            </section>
+
+            <section>
+                <section data-menu-title="Contenido">
+                    <h5>Contenido</h5>
+                    <ul>
+                        <li>
+                            Introducción
+                        </li>
+                        <li>
+                            Configurando Nuestro Proyecto
+                        </li>
+                        <ul>
+                            <li>
+                                NodeJS
+                            </li>
+                            <li>
+                                Gulp
+                            </li>
+                            <li>
+                                BrowserSync
+                            </li>
+                            <li>
+                                SASS
+                            </li>
+                        </ul>
+                    </ul>
+                </section>
+                <section data-menu-title="Contenido 1.1">
+                    <ul>
+                        <li>Desarrollo del Proyecto</li>
+                        <li>Diseño Adaptativo</li>
+                        <li>Agregando Efectos con Jquery</li>
+                        <li>Optimización</li>
+                        <li>Diseño Web Tips</li>
+                    </ul>
+                </section>
+            </section>
+
+            <section data-menu-title="Tecnologías">
+                <h3>Tecnologías</h3>
+                <ul>
+                    <li class="fragment a">
+                        <i class="fab fa-gulp"></i> Gulp</li>
+                    <li class="fragment b">
+                        <i class="fas fa-server"></i> Browser Sync</li>
+                    <li class="fragment c">
+                        <i class="fab fa-sass"></i> Sass</li>
+                    <li class="fragment d">
+                        <i class="fab fa-css3-alt"></i> Bootstrap</li>
+                    <li class="fragment e">
+                        <i class="fab fa-js"></i> Jquery(Plugins)</li>
+                </ul>
+            </section>
+
+            <section>
+                <section>
+                    <p>
+                        <i class="fab fa-node-js"></i>
+                    </p>
+                    <h1>NodeJS</h1>
+                    <h3>Instalación</h3>
+                    <p>
+                        <a href="https://nodejs.org/es/" target="_blank">
+                            <i class="fas fa-cloud-download-alt"></i>
+                        </a>
+                    </p>
+                </section>
+                <section data-menu-title="Verificar NodeJS">
+                    <p>
+                        <i class="fab fa-node-js"></i>
+                    </p>
+                    <h3>Verificar</h3>
+                    <p>
+                        <i class="fas fa-terminal fa-x5"></i>
+                    </p>
+                    <pre>
+                            <code data-trim data-noescape>
+                                node --version
+                                npm --version
+                            </code>
+                        </pre>
+                </section>
+            </section>
+
+            <section>
+                <section data-menu-title="Visual Studio Code">
+                    <h3>Editor de Código</h3>
+                    <h3>Visual Studio Code</h3>
+                    <a href="https://code.visualstudio.com/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </section>
+                <section data-menu-title="Extensions">
+                    <h3>Visual Studio Code</h3>
+                    <h3>Extensions</h3>
+                    <p>Auto Close Tag, Auto Rename Tag, Beautify, file-icons, HTML CSS Support, Path Intellisense, Sass, Panda Theme</p>
+                </section>
+            </section>
+
+            <section>
+                <h3>Estructura de Carpetas</h3>
+                <ul>
+                    <li class="fragment a">
+                        <i class="fas fa-folder"></i> css</li>
+                    <li class="fragment b">
+                        <i class="fas fa-folder"></i> fonts</li>
+                    <li class="fragment c">
+                        <i class="fas fa-folder"></i> img</li>
+                    <li class="fragment d">
+                        <i class="fas fa-folder"></i> js</li>
+                    <li class="fragment e">
+                        <i class="fas fa-folder"></i> sass</li>
+                    <li class="fragment f">
+                        <i class="fas fa-file"></i> index.html</li>
+                    <li class="fragment g">
+                        <i class="fas fa-file"></i> gulpfile.js</li>
+                </ul>
+            </section>
+
+            <section>
+                <section>
+                    <p>
+                        <i class="fab fa-gulp fa-2x"></i>
+                    </p>
+                    <h3>
+                        <a href="https://gulpjs.com/" target="_blank">Gulp</a>
+                    </h3>
+                    <p>Es una herramienta, en forma de script en NodeJS, que te ayuda a automatizar tareas comunes en el desarrollo de una aplicación, como pueden ser: mover archivos de una carpeta a otra, eliminarlos, minificar código, sincronizar el navegador
+                        cuando modificas tu código, validar sintáxis y un largo etcétera.</p>
+                </section>
+                <section data-menu-title="Instalación General">
+                    <p>
+                        <i class="fab fa-gulp fa-2x"></i>
+                    </p>
+                    <h3>Gulp</h3>
+                    <h5>Instalación General</h5>
+                    <p>
+                        <i class="fas fa-terminal fa-x5"></i>
+                    </p>
+                    <pre>
+                            <code data-trim data-noescape>
+                                npm install -g gulp
+                                gulp --version
+                            </code>
+                        </pre>
+                </section>
+                <section data-menu-title="Instalación Local">
+                    <p>
+                        <i class="fab fa-gulp fa-2x"></i>
+                    </p>
+                    <h5>Instalación / Proyecto</h5>
+                    <p>
+                        <i class="fas fa-terminal fa-x5"></i>
+                    </p>
+                    <pre>
+                            <code data-trim data-noescape>
+                                npm init -y
+                                npm install --save-dev gulp
+                            </code>
+                        </pre>
+                    <p>
+                        <i class="fas fa-angle-double-right"></i> Ejecutar estos comandos dentro de la carpeta proyecto
+                    </p>
+                </section>
+                <section data-menu-title="Hola Mundo Con Gulp">
+                    <p>
+                        <i class="fab fa-gulp fa-2x"></i>
+                    </p>
+                    <h3>Hola Mundo</h3>
+                    <pre>
+                            <code class="javascript" data-trim data-noescape>
+                                    var gulp = require('gulp');
+
+                                    gulp.task('default', function () {
+                                        console.log('Hola Mundo');
+                                    });
+                            </code>
+                        </pre>
+                    <p>
+                        <i class="fas fa-file"></i> gulpfile.js</p>
+                </section>
+                <section data-menu-title="Ejecutando Gulp">
+                    <p>
+                        <i class="fab fa-gulp fa-2x"></i>
+                    </p>
+                    <h3>Hola Mundo</h3>
+                    <p>Ejecutar Comando</p>
+                    <p>
+                        <i class="fas fa-terminal fa-x5"></i>
+                    </p>
+                    <pre>
+                            <code data-trim data-noescape>
+                                gulp
+                            </code>
+                        </pre>
+                </section>
+                <section data-menu-title="Ejemplo con Gulp">
+                    <p>
+                        <i class="fab fa-gulp fa-2x"></i>
+                    </p>
+                    <h5>Ejemplo con Gulp</h5>
+                    <pre>
+                                <code class="javascript" data-trim data-noescape>
+                                        var gulp = require('gulp');
+
+                                        gulp.task('default', function () {
+                                            console.log('Hola Mundo');
+                                        });
+
+                                        gulp.task('tarea', function () {
+                                            console.log('Ejecutando una Tarea con Gulp');
+                                        });
+
+                                        gulp.task('sass', function () {
+                                            console.log('Compilando SASS');
+                                        });
+
+                                        gulp.task('server', function () {
+                                            console.log('Activando Servidor');
+                                        });
+                                </code>
+                            </pre>
+                    <p>
+                        <i class="fas fa-file"></i> gulpfile.js</p>
+                </section>
+                <section data-menu-title="Comando">
+                    <p>
+                        <i class="fab fa-gulp fa-2x"></i>
+                    </p>
+                    <h3>Ejecutar Comando</h3>
+                    <p>
+                        <i class="fas fa-terminal fa-x5"></i>
+                    </p>
+                    <pre>
+                                <code data-trim data-noescape>
+                                    gulp tarea
+                                    gulp sass
+                                    gulp server
+                                </code>
+                            </pre>
+                </section>
+                <section data-menu-title="Métodos">
+                    <p>
+                        <i class="fab fa-gulp fa-2x"></i>
+                    </p>
+                    <h3>Métodos</h3>
+                    <pre>
+                            <code class="javascript" data-trim data-noescape>
+                                    const gulp = require('gulp');
+
+                                    //4 Métodos de Gulp
+                                    gulp.task();//Definir Tarea
+                                    gulp.src();//Ruta de Origin
+                                    gulp.dest();//Resultado de la Tarea Indicada
+                                    gulp.watch();//Supervisar Directorio
+                            </code>
+                        </pre>
+                </section>
+            </section>
+
+            <section>
+                <section data-menu-title="Browsersync">
+                    <p>
+                        <i class="fas fa-server fa-2x"></i>
+                    </p>
+                    <h3>
+                        <a href="https://browsersync.io/" target="_blank">BROWSERSYNC</a>
+                    </h3>
+                    <h3>Features</h3>
+                    <ul>
+                        <li class="fragment 1">Recarga en vivo</li>
+                        <li class="fragment 2">Simular conexiones más lentas</li>
+                        <li class="fragment 3">Compatibilidad</li>
+                    </ul>
+                </section>
+                <section data-menu-title="Instalación Local">
+                    <p>
+                        <i class="fas fa-server fa-2x"></i>
+                    </p>
+                    <h3>
+                        BROWSERSYNC / Instalación
+                    </h3>
+                    <h3>Ejecutar Comando</h3>
+                    <p>
+                        <i class="fas fa-terminal fa-x5"></i>
+                    </p>
+                    <pre>
+                                <code data-trim data-noescape>
+                                    npm install browser-sync --save-dev
+                                </code>
+                            </pre>
+                </section>
+                <section data-menu-title="Configuración">
+                    <p>
+                        <i class="fas fa-server fa-2x"></i>
+                    </p>
+                    <h5>
+                        BROWSERSYNC / Configuración
+                    </h5>
+                    <pre>
+                                    <code class="javascript" data-trim data-noescape>
+                                            var gulp = require("gulp");
+
+                                            var browserSync = require("browser-sync").create();
+
+                                            gulp.task("serve", function() {
+                                              browserSync.init({
+                                                server: "./"
+                                              });
+
+                                              gulp.watch("./*.html").on("change", browserSync.reload);
+                                            });
+
+                                    </code>
+                                </pre>
+                    <p>
+                        <i class="fas fa-file"></i> gulpfile.js</p>
+                </section>
+                <section data-menu-title="Comando">
+                    <p>
+                        <i class="fas fa-server fa-2x"></i>
+                    </p>
+                    <h3>
+                        BROWSERSYNC
+                    </h3>
+                    <h3>Ejecutar Comando</h3>
+                    <p>
+                        <i class="fas fa-terminal fa-x5"></i>
+                    </p>
+                    <pre>
+                                <code data-trim data-noescape>
+                                    gulp serve
+                                </code>
+                            </pre>
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <p>
+                        <i class="fab fa-sass"></i>
+                    </p>
+                    <h1>
+                        <a href="https://sass-lang.com/" target="_blank">Sass</a>
+                    </h1>
+                </section>
+                <section data-menu-title="Concepto">
+                    <p>
+                        <i class="fab fa-sass"></i> es la posibilidad de convertir los CSS en algo dinámico. Permite trabajar mucho más rápido en la creación de código con la posibilidad de crear funciones que realicen ciertas operaciones matemáticas y reutilizar
+                        código gracias a los mixins, variables que nos permiten guardar valores.</p>
+                    <p>
+                        <i class="fab fa-sass"></i> dispone de dos formatos diferentes para la sintaxis, lo que hace se traduce en dos extensiones de fichero diferentes: .sass y .scss</p>
+                </section>
+                <section data-menu-title="Instalación Local">
+                    <p>
+                        <i class="fab fa-sass"></i>
+                    </p>
+                    <h3>Sass</h3>
+                    <h3>Ejecutar Comando</h3>
+                    <p>
+                        <i class="fas fa-terminal fa-x5"></i>
+                    </p>
+                    <pre>
+                        <code class="javascript" data-trim data-noescape>
+                            npm install --save-dev gulp-sass gulp-autoprefixer
+                        </code>
+                    </pre>
+                </section>
+                <section data-menu-title="Configuración">
+                    <p>
+                        <i class="fab fa-sass"></i>
+                    </p>
+                    <p>
+                        <i class="fas fa-file"></i> gulpfile.js</p>
+                    <pre>
+                        <code class="javascript" data-trim data-noescape>
+                                var gulp = require("gulp");
+                                var browserSync = require("browser-sync").create();
+                                var sass = require('gulp-sass');
+                                var autoprefixer = require('gulp-autoprefixer');
+
+                                gulp.task("serve", function() {
+                                  browserSync.init({
+                                    server: "./"
+                                  });
+
+                                  gulp.watch("./*.html").on("change", browserSync.reload);
+                                });
+
+                                gulp.task('sass', function() {
+                                  gulp.src('./sass/*.scss')
+                                      .pipe(sass())
+                                      .pipe(autoprefixer({
+                                          versions: ['last 2 browsers']
+                                      }))
+                                      .pipe(gulp.dest('./css'));
+                                });
+
+                                gulp.task('watch', function(){
+                                  gulp.watch(['./sass/*.scss'], ['sass']);
+                                });
+
+                        </code>
+                    </pre>
+                </section>
+                <section data-menu-title="Usando .SCSS">
+                    <p>
+                        <i class="fab fa-sass"></i>
+                    </p>
+                    <p>
+                        <i class="fas fa-angle-double-right"></i> Crear ejemplo.scss dentro de la carpeta sass</p>
+                    <pre>
+                        <code class="css" data-trim data-noescape>
+                                body {
+                                    background: wheat;
+                                }
+                        </code>
+                    </pre>
+                    <p>
+                        <i class="fas fa-file"></i> ejemplo.scss</p>
+                </section>
+                <section data-menu-title="Mi HTML">
+                    <p>
+                        <i class="fa fa-file"></i> index.html</p>
+                    <pre>
+                        <code class="html" data-trim data-noescape>
+                                &lt;!DOCTYPE html&gt;
+                                &lt;html lang="en"&gt;
+                                &lt;head&gt;
+                                    &lt;meta charset="UTF-8"&gt;
+                                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                                    &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
+                                    &lt;title&gt;Hola Mundo&lt;/title&gt;
+                                    &lt;link rel="stylesheet" href="css/ejemplo.css"&gt;
+                                &lt;/head&gt;
+                                &lt;body&gt;
+                                    &lt;h3&gt;Hola Mundo&lt;/h3&gt;
+                                    &lt;p&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias blanditiis neque earum sed iure, ea tempora doloremque amet accusantium saepe consequuntur praesentium qui dignissimos recusandae aspernatur quibusdam, mollitia culpa ex!&lt;/p&gt;
+                                &lt;/body&gt;
+                                &lt;/html&gt;
+                        </code>
+                    </pre>
+                </section>
+                <section data-menu-title="Comando">
+                    <p>
+                        <i class="fab fa-sass"></i>
+                    </p>
+                    <h3>Ejecutar Comando</h3>
+                    <p>
+                        <i class="fas fa-terminal fa-x5"></i>
+                    </p>
+                    <pre>
+                        <code data-trim data-noescape>
+                            gulp sass
+                        </code>
+                    </pre>
+                </section>
+                <section data-menu-title="Live Reload">
+                    <p>
+                        <i class="fab fa-sass"></i>
+                    </p>
+                    <h3>Live Reload</h3>
+                    <p>
+                        <i class="fas fa-terminal"></i>
+                    </p>
+                    <pre>
+                        <code data-trim data-noescape>
+                            gulp watch
+                        </code>
+                    </pre>
+                </section>
+                <section data-menu-title="Variables">
+                    <p>
+                        <i class="fab fa-sass"></i>
+                    </p>
+                    <h1>Variables</h1>
+                </section>
+                <section data-menu-title="Ejemplo con Variables">
+                    <p>
+                        <i class="fab fa-sass"></i>
+                    </p>
+                    <h5>Variables /
+                        <i class="fas fa-file"></i> ejemplo.scss</h5>
+                    <pre>
+                        <code class="css" data-trim data-noescape>
+                                //Colores
+                                $texto: #332D33;
+                                $fondo: #EDECEA;
+                                $colorPrimario: #2D7DD2;
+                                $colorSecundario: #F4273B;
+
+                                //Estilos de fuentes
+                                $texto-fuente: Verdana, Arial, sans-serif;
+
+                                //Tamaños
+                                $ancho: 70%;
+                                $altura: 200px;
+                                $marginBase: 40px;
+
+                                body {
+                                    background: $fondo;
+                                    color: $texto;
+                                }
+
+                                .caja {
+                                    width: $ancho;
+                                    height: $altura;
+                                    background: $colorPrimario;
+                                    margin: $marginBase auto;
+                                }
+
+                                .efecto {
+                                    box-shadow: 0 10px 6px -6px #777;
+                                }
+                        </code>
+                    </pre>
+                </section>
+                <section data-menu-title="Update Nuestro HTML">
+                    <p>
+                        <i class="fab fa-sass"></i>
+                    </p>
+                    <h5>
+                        <i class="fas fa-file"></i> index.html</h5>
+                    <pre>
+                        <code class="html" data-trim data-noescape>
+                                &lt;!DOCTYPE html&gt;
+                                &lt;html lang="en"&gt;
+                                &lt;head&gt;
+                                    &lt;meta charset="UTF-8"&gt;
+                                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                                    &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
+                                    &lt;title&gt;Hola Mundo&lt;/title&gt;
+                                    &lt;link rel="stylesheet" href="css/ejemplo.css"&gt;
+                                &lt;/head&gt;
+                                &lt;body&gt;
+                                    &lt;div class="caja efecto"&gt;
+                                        &lt;h3&gt;Hola Mundo&lt;/h3&gt;
+                                        &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia illo consequatur praesentium vitae fugiat, quisquam sint tenetur atque explicabo quia quod dignissimos quidem debitis doloremque hic vero rerum similique enim.&lt;/p&gt;
+                                    &lt;/div&gt;
+                                &lt;/body&gt;
+                                &lt;/html&gt;
+                        </code>
+                    </pre>
+                </section>
+                <section data-menu-title="Live Reload">
+                    <p>
+                        <i class="fab fa-sass"></i>
+                    </p>
+                    <h3>Live Reload</h3>
+                    <p>
+                        <i class="fas fa-terminal"></i>
+                    </p>
+                    <pre>
+                        <code data-trim data-noescape>
+                            gulp watch
+                        </code>
+                    </pre>
+                </section>
+                <section data-menu-title="Parciales / Import">
+                    <p>
+                        <i class="fab fa-sass"></i>
+                    </p>
+                    <h1>Parciales / Import</h1>
+                </section>
+                <section data-menu-title="Ejemplo con Parciales">
+                    <p>
+                        <i class="fab fa-sass"></i>
+                    </p>
+                    <p>Crear
+                        <i class="fas fa-file"></i> _variables.scss dentro de la carpeta sass.</p>
+                    <pre>
+                        <code class="css" data-trim data-noescape>
+                                //Colores
+                                $texto: #332D33;
+                                $fondo: #EDECEA;
+                                $colorPrimario: #2D7DD2;
+                                $colorSecundario: #F4273B;
+
+                                //Estilos de fuentes
+                                $texto-fuente: Verdana, Arial, sans-serif;
+
+                                //Tamaños
+                                $ancho: 70%;
+                                $altura: 200px;
+                                $marginBase: 40px;
+                        </code>
+                    </pre>
+                </section>
+                <section data-menu-title="@Import SASS">
+                    <p>
+                        <i class="fab fa-sass"></i>
+                    </p>
+                    <h5>Import /
+                        <i class="fas fa-file"></i> ejempo.scss</h5>
+                    <pre>
+                            <code class="css" data-trim data-noescape>
+                                    @import 'variables';
+
+                                    body {
+                                        background: $fondo;
+                                        color: $texto;
+                                        font-family: $texto-fuente;
+                                    }
+
+                                    .caja {
+                                        width: $ancho;
+                                        height: $altura;
+                                        background: $colorPrimario;
+                                        margin: $marginBase auto;
+                                    }
+
+                                    .efecto {
+                                        box-shadow: 0 10px 6px -6px #777;
+                                    }
+                            </code>
+                        </pre>
+                </section>
+                <section data-menu-title="Live Reload">
+                    <p>
+                        <i class="fab fa-sass"></i>
+                    </p>
+                    <h3>Verificar</h3>
+                    <p>
+                        <i class="fas fa-terminal fa-x5"></i>
+                    </p>
+                    <pre>
+                            <code data-trim data-noescape>
+                                gulp watch
+                            </code>
+                        </pre>
+                </section>
+                <section data-menu-title="Nesting / Anidación">
+                    <p>
+                        <i class="fab fa-sass"></i>
+                    </p>
+                    <h1>Nesting / Anidación</h1>
+                </section>
+
+                <section data-menu-title="Ejemplo Nesting">
+                    <p>
+                        <i class="fab fa-sass"></i>
+                    </p>
+                    <h5>Nesting /
+                        <i class="fas fa-file"></i> ejempo.scss</h5>
+                    <pre>
+                            <code class="css" data-trim data-noescape>
+                                    @import 'variables';
+
+                                    body {
+                                        background: $fondo;
+                                        color: $texto;
+                                        font-family: $texto-fuente;
+                                    }
+
+                                    .caja {
+                                        width: $ancho;
+                                        height: $altura;
+                                        background: $colorPrimario;
+                                        margin: $marginBase auto;
+
+                                        h3 {
+                                            color: white;
+                                            text-align: center;
+                                            padding: 10px;
+                                        }
+
+                                        p {
+                                            color: white;
+                                            text-align: justify;
+                                            padding: 10px;
+                                        }
+                                    }
+
+
+
+                                    .efecto {
+                                        box-shadow: 0 10px 6px -6px #777;
+                                    }
+                            </code>
+                        </pre>
+                </section>
+                <section data-menu-title="Live Reload">
+                    <p>
+                        <i class="fab fa-sass"></i>
+                    </p>
+                    <h3>Verificar</h3>
+                    <p>
+                        <i class="fas fa-terminal fa-x5"></i>
+                    </p>
+                    <pre>
+                                <code data-trim data-noescape>
+                                    gulp watch
+                                </code>
+                            </pre>
+                </section>
+                <section data-menu-title="El uso de &">
+                    <p>
+                        <i class="fab fa-sass"></i>
+                    </p>
+                    <h5>Nesting + El Uso de & /
+                        <i class="fas fa-file"></i> ejempo.scss</h5>
+                    <p>& se utiliza para repetir el selector padre</p>
+                    <pre>
+                        <code class="css" data-trim data-noescape>
+                                @import 'variables';
+
+                                body {
+                                    background: $fondo;
+                                    color: $texto;
+                                    font-family: $texto-fuente;
+                                }
+
+                                .caja {
+                                    width: $ancho;
+                                    height: $altura;
+                                    background: $colorPrimario;
+                                    margin: $marginBase auto;
+
+                                    &:hover {
+                                        background: $colorSecundario;
+                                    }
+
+                                    h3 {
+                                        color: white;
+                                        text-align: center;
+                                        padding: 10px;
+                                    }
+
+                                    p {
+                                        color: white;
+                                        text-align: justify;
+                                        padding: 10px;
+                                    }
+                                }
+
+                                .efecto {
+                                    box-shadow: 0 10px 6px -6px #777;
+                                }
+                        </code>
+                    </pre>
+                </section>
+                <section data-menu-title="Live Reload">
+                    <p>
+                        <i class="fab fa-sass"></i>
+                    </p>
+                    <h3>Verificar</h3>
+                    <p>
+                        <i class="fas fa-terminal fa-x5"></i>
+                    </p>
+                    <pre>
+                                    <code data-trim data-noescape>
+                                        gulp watch
+                                    </code>
+                                </pre>
+                </section>
+                <section data-menu-title="Extend / Herencia">
+                    <p>
+                        <i class="fab fa-sass"></i>
+                    </p>
+                    <h1>Extend / Inheritance</h1>
+                </section>
+                <section data-menu-title="Ejemplo @Extend">
+                    <p>
+                        <i class="fab fa-sass"></i>
+                    </p>
+                    <h5>
+                        @Extend + Inheritance /
+                        <i class="fas fa-file"></i> ejempo.scss
+                    </h5>
+                    <pre>
+                        <code class="css" data-trim data-noescape>
+                                @import 'variables';
+
+                                body {
+                                    background: $fondo;
+                                    color: $texto;
+                                    font-family: $texto-fuente;
+                                }
+
+                                footer {
+                                    position: absolute;
+                                    bottom: 2rem;
+                                    width: 100%;
+                                }
+
+                                .caja {
+                                    width: $ancho;
+                                    height: $altura;
+                                    background: $colorPrimario;
+                                    margin: $marginBase auto;
+
+                                    &:hover {
+                                        background: $colorSecundario;
+                                    }
+
+                                    h3 {
+                                        color: white;
+                                        text-align: center;
+                                        padding: 10px;
+                                    }
+
+                                    p {
+                                        color: white;
+                                        text-align: justify;
+                                        padding: 10px;
+                                    }
+                                }
+
+                                .caja2 {
+                                    @extend .caja;
+                                    transition: background 0.5s;
+                                }
+
+
+                                .efecto {
+                                    box-shadow: 0 10px 6px -6px #777;
+                                }
+                        </code>
+                    </pre>
+                </section>
+                <section data-menu-title="Update HTML">
+                    <p>
+                        <i class="fab fa-sass"></i>
+                    </p>
+                    <h5>
+                        <i class="fas fa-file"></i> index.html
+                    </h5>
+                    <pre>
+                        <code class="html" data-trim data-noescape>
+                                &lt;!DOCTYPE html&gt;
+                                &lt;html lang="en"&gt;
+
+                                &lt;head&gt;
+                                    &lt;meta charset="UTF-8"&gt;
+                                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                                    &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
+                                    &lt;title&gt;Hola Mundo&lt;/title&gt;
+                                    &lt;link rel="stylesheet" href="css/ejemplo.css"&gt;
+                                &lt;/head&gt;
+
+                                &lt;body&gt;
+                                    &lt;div class="caja efecto"&gt;
+                                        &lt;h3&gt;Caja 1&lt;/h3&gt;
+                                        &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia illo consequatur praesentium vitae fugiat, quisquam
+                                            sint tenetur atque explicabo quia quod dignissimos quidem debitis doloremque hic vero rerum similique enim.&lt;/p&gt;
+                                    &lt;/div&gt;
+
+                                    &lt;div class="caja2 efecto"&gt;
+                                        &lt;h3&gt;Caja 2&lt;/h3&gt;
+                                        &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia illo consequatur praesentium vitae fugiat, quisquam
+                                            sint tenetur atque explicabo quia quod dignissimos quidem debitis doloremque hic vero rerum similique enim.&lt;/p&gt;
+                                    &lt;/div&gt;
+
+                                &lt;/body&gt;
+
+                                &lt;/html&gt;
+                        </code>
+                    </pre>
+                </section>
+                <section data-menu-title="Live Reload">
+                    <p>
+                        <i class="fab fa-sass"></i>
+                    </p>
+                    <h3>Verificar</h3>
+                    <p>
+                        <i class="fas fa-terminal fa-x5"></i>
+                    </p>
+                    <pre>
+                        <code data-trim data-noescape>
+                            gulp watch
+                        </code>
+                    </pre>
+                </section>
+                <section data-menu-title="Mixins">
+                    <p>
+                        <i class="fab fa-sass"></i>
+                    </p>
+                    <h1>Mixins</h1>
+                </section>
+                <section data-menu-title="Creando Mixin">
+                    <p>
+                        <i class="fab fa-sass"></i>
+                    </p>
+                    <h5>
+                        @include + Mixin /
+                        <i class="fas fa-file"></i> ejempo.scss
+                    </h5>
+                    <pre>
+                                <code class="css" data-trim data-noescape>
+                                        @import 'variables';
+
+                                        body {
+                                            background: $fondo;
+                                            color: $texto;
+                                            font-family: $texto-fuente;
+                                            padding: 50px;
+                                        }
+
+                                        footer {
+                                            position: absolute;
+                                            bottom: 2rem;
+                                            width: 100%;
+                                        }
+
+                                        .caja {
+                                            width: $ancho;
+                                            height: $altura;
+                                            background: $colorPrimario;
+                                            margin: $marginBase auto;
+
+                                            &:hover {
+                                                background: $colorSecundario;
+                                            }
+
+                                            h3 {
+                                                color: white;
+                                                text-align: center;
+                                                padding: 10px;
+                                            }
+
+                                            p {
+                                                color: white;
+                                                text-align: justify;
+                                                padding: 10px;
+                                            }
+                                        }
+
+                                        .caja2 {
+                                            @extend .caja;
+                                            transition: background 0.5s;
+                                        }
+
+
+                                        .efecto {
+                                            box-shadow: 0 10px 6px -6px #777;
+                                        }
+
+                                        //Creado mixin
+                                        @mixin button($borderRadio, $fontSize){
+                                            position: relative;
+                                            padding: 10px 40px;
+                                            margin: 0px 10px 10px 0px;
+                                            float: left;
+                                            border-radius: $borderRadio;
+                                            font-size: $fontSize;
+                                            color: #FFF;
+                                            text-decoration: none;
+
+                                            &:active {
+                                                transform: translate(0px,5px);
+                                                border-bottom: 1px solid;
+                                            }
+                                        }
+
+                                        .button {
+                                            @include button($boderRadio: 10px, $fontSize: 25px);//Utilizando mixin
+                                        }
+
+                                        .animate
+                                        {
+                                            transition: all 0.1s;
+                                        }
+
+                                        .azul {
+                                            background-color: #3498DB;
+                                            border-bottom: 5px solid #2980B9;
+                                            text-shadow: 0px -2px #2980B9;
+                                        }
+                                </code>
+                            </pre>
+                </section>
+                <section data-menu-title="Update HTML">
+                    <p>
+                        <i class="fab fa-sass"></i>
+                    </p>
+                    <h5>
+                        <i class="fas fa-file"></i> index.html
+                    </h5>
+                    <pre>
+                        <code class="html" data-trim data-noescape>
+                                &lt;!DOCTYPE html&gt;
+                                &lt;html lang="en"&gt;
+
+                                &lt;head&gt;
+                                    &lt;meta charset="UTF-8"&gt;
+                                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                                    &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
+                                    &lt;title&gt;Hola Mundo&lt;/title&gt;
+                                    &lt;link rel="stylesheet" href="css/ejemplo.css"&gt;
+                                &lt;/head&gt;
+
+                                &lt;body&gt;
+                                    &lt;div class="caja efecto"&gt;
+                                        &lt;h3&gt;Caja 1&lt;/h3&gt;
+                                        &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia illo consequatur praesentium vitae fugiat, quisquam
+                                            sint tenetur atque explicabo quia quod dignissimos quidem debitis doloremque hic vero rerum similique enim.&lt;/p&gt;
+                                    &lt;/div&gt;
+
+                                    &lt;div class="caja2 efecto"&gt;
+                                        &lt;h3&gt;Caja 2&lt;/h3&gt;
+                                        &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia illo consequatur praesentium vitae fugiat, quisquam
+                                            sint tenetur atque explicabo quia quod dignissimos quidem debitis doloremque hic vero rerum similique enim.&lt;/p&gt;
+                                    &lt;/div&gt;
+
+                                    &lt;a href="#" class="button animate azul"&gt;Google&lt;/a&gt;
+
+
+
+                                &lt;/body&gt;
+
+                                &lt;/html&gt;
+                        </code>
+                    </pre>
+                </section>
+                <section data-menu-title="Live Reload">
+                    <p>
+                        <i class="fab fa-sass"></i>
+                    </p>
+                    <h3>Verificar</h3>
+                    <p>
+                        <i class="fas fa-terminal fa-x5"></i>
+                    </p>
+                    <pre>
+                            <code data-trim data-noescape>
+                                gulp watch
+                            </code>
+                        </pre>
+                </section>
+            </section>
+        </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
+        // More info about config & dependencies:
+        // - https://github.com/hakimel/reveal.js#configuration
+        // - https://github.com/hakimel/reveal.js#dependencies
+        Reveal.initialize({
+            dependencies: [{
+                    src: 'plugin/markdown/marked.js'
+                },
+                {
+                    src: 'plugin/markdown/markdown.js'
+                },
+                {
+                    src: 'plugin/notes/notes.js',
+                    async: true
+                },
+                {
+                    src: 'plugin/highlight/highlight.js',
+                    async: true,
+                    callback: function () {
+                        hljs.initHighlightingOnLoad();
+                    }
+                },
+                { src: 'node_modules/reveal.js-menu/menu.js' }
+            ],
+
+            menu: {
+                markers: true,
+                numbers: true,
+                transitions: false,
+                titleSelector: 'h1,h3',
+            }
+        });
+    </script>
+</body>
+
 </html>

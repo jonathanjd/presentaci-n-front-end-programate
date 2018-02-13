@@ -1,5 +1,5 @@
 {
-  "name": "Class1",
+  "name": "class1",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -14,6 +14,10 @@
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.23.6",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-pug": "^3.3.0"
+  },
+  "dependencies": {
+    "reveal.js-menu": "^0.9.3"
   }
 }
