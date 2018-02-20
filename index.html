@@ -1237,26 +1237,26 @@
 
                             gulp.task("serve", ['sass'], function() {
 
-                            browserSync.init({
+                              browserSync.init({
                                 server: "./"
-                            });
+                              });
 
-                            gulp.watch("app/scss/*.scss", ['sass']);
+                              gulp.watch("sass/*.scss", ['sass']);
 
-                            gulp.watch("./*.html").on("change", browserSync.reload);
+                              gulp.watch("./*.html").on("change", browserSync.reload);
                             });
 
                             gulp.task('sass', function() {
-                            gulp.src('./sass/*.scss')
-                                .pipe(sass())
-                                .pipe(autoprefixer({
-                                    versions: ['last 2 browsers']
-                                }))
-                                .pipe(gulp.dest('./css'));
+                              gulp.src('./sass/*.scss')
+                                  .pipe(sass())
+                                  .pipe(autoprefixer({
+                                      versions: ['last 2 browsers']
+                                  }))
+                                  .pipe(gulp.dest('./css'));
                             });
 
                             gulp.task('watch', function(){
-                            gulp.watch(['./sass/*.scss'], ['sass']);
+                              gulp.watch(['./sass/*.scss'], ['sass']);
                             });
                         </code>
                     </pre>
@@ -1413,7 +1413,7 @@
                                     color: $steelGrey;
                                     text-transform: uppercase;
                                 }
-                        </code>
+                            </code>
                     </pre>
                 </section>
                 <section>
@@ -1424,6 +1424,246 @@
                         <code class="css" data-trim data-noescape>
                             @import 'variables';
                             @import 'base/base';
+                        </code>
+                    </pre>
+                </section>
+                <section data-menu-title="Agregar HTML">
+                    <p><i class="fab fa-html5"></i></p>
+                    <h3>Agregar HTML / <i class="fa fa-file"></i> Index.html</h3>
+                    <pre>
+                        <code class="html" data-trim data-noescape>
+                            &lt;!-- Home Start --&gt;
+
+                            &lt;section class="home"&gt;
+
+                            &lt;div class="home__cover parallax"&gt;
+
+                            &lt;div class="home__content-box"&gt;
+
+                            &lt;div class="home__content-box-inner"&gt;
+
+                            &lt;div class="home__heading"&gt;
+                            &lt;h3&gt;Watch Out &lt;br&gt; The Moderns Responsive Website&lt;/h3&gt;
+                            &lt;/div&gt;
+
+                            &lt;a class="btn btn-lg button button--white" href="#work" role="button" title="View Our Work"&gt;View Our Work&lt;/a&gt;
+
+                                    &lt;/div&gt;
+
+                                    &lt;/div&gt;
+
+                                    &lt;/div&gt;
+
+                                    &lt;/section&gt;
+
+                                    &lt;!-- Home End --&gt;
+                                </code>
+                            </pre>
+                        </section>
+                        <section data-menu-title="Agregando Layout">
+                            <p><i class="fab fa-sass"></i></p>
+                            <h3>Agregando Layout / <i class="fa fa-file"></i> _home.scss</h3>
+                            <pre>
+                                <code class="css" data-trim data-noescape>
+                                    /*===============================================
+                            Bloque
+                            ================================================*/
+                            .home {
+                                height: 100%;
+                            }
+
+                            /*===============================================
+                            Elementos
+                            ================================================*/
+
+                            .home__cover {
+                                height: 100%;
+                                background-image: url("../img/bg-home.jpg");
+                            }
+
+                            .home__content-box {
+                                width: 100%;
+                                height: 100%;
+                                display: table;
+                            }
+
+                            .home__content-box-inner {
+                                display: table-cell;
+                                vertical-align: middle;
+                            }
+
+                            .home__heading {
+                                h3 {
+                                    color: $white;
+                                    font-size: 55px;
+                                    font-weight: 700;
+                                    margin: 20px 0 20px 0;
+                                }
+                            }
+
+                            /*===============================================
+                            Modificadores / Animate
+                            ================================================*/
+
+                            .home--cover {
+                                animation-delay: .1s;
+                            }
+
+                            .home--heading {
+                                animation-delay: .5s;
+                            }
+
+                            .home--btn {
+                                animation-delay: 1s;
+                            }
+
+                        </code>
+                    </pre>
+                </section>
+                <section data-menu-title="Add Module Parallax">
+                    <p><i class="fab fa-sass"></i></p>
+                    <h3>Module Parallax / <i class="fa fa-file"></i> _parallax.scss</h3>
+                    <pre>
+                        <code class="css" data-trim data-noescape>
+                            .parallax {
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                background-position: center;
+                                background-attachment: fixed;
+                            }
+                        </code>
+                    </pre>
+                </section>
+                <section data-menu-title="Add Module Button">
+                    <p><i class="fab fa-sass"></i></p>
+                    <h3>Module Button / <i class="fa fa-file"></i> _button.scss</h3>
+                    <pre>
+                        <code class="css" data-trim data-noescape>
+                            .button {
+                                border-width: 2px;
+                                border-radius: 0;
+                                padding: 12px 26px 12px 26px;
+                                font-size: 16px;
+                                font-weight: 400;
+                                text-transform: uppercase;
+                            }
+
+                            .button--white {
+                                border-color: $white;
+                                color: $white;
+                                &:hover, &:focus {
+                                    background-color: $white;
+                                    color: $steelGrey;
+                                }
+                            }
+
+                            .button--blue {
+                                border-color: $mediumTurquoise;
+                                color: $mediumTurquoise;
+                                &:hover, &:focus {
+                                    background-color: $mediumTurquoise;
+                                    color: $white;
+                                }
+                            }
+
+                            .button--backToTop {
+                                position: fixed;
+                                bottom: 20px;
+                                right: 20px;
+                                font-size: 22px;
+                                padding: 3px 15px;
+                                border-radius: 0;
+                                display: none;
+                            }
+
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <p><i class="fa fa-paint-brush"></i></p>
+                    <h3>Import Module+Layout</h3>
+                    <p><i class="fa fa-file"> style.scss</i></p>
+                    <pre>
+                        <code class="css" data-trim data-noescape>
+                            @import 'variables';
+                            @import 'base/base';
+
+                            @import 'module/parallax';
+                            @import 'module/button';
+
+                            @import 'layout/home';
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <p><i class="fab fa-css3"></i></p>
+                    <h1><a href="https://github.com/daneden/animate.css" target="_blank">Animate.css</a></h1>
+                </section>
+                <section>
+                    <h3>Actualizar HTML</h3>
+                    <pre>
+                        <code class="html" data-trim data-noescape>
+                        &lt;!-- Home Start --&gt;
+
+                        &lt;section class="home"&gt;
+
+                            &lt;div class="home__cover parallax animated fadeIn"&gt;
+
+                                &lt;div class="home__content-box"&gt;
+
+                                    &lt;div class="home__content-box-inner text-center"&gt;
+
+                                        &lt;div class="home__heading animated zoomIn"&gt;
+                                            &lt;h3&gt;Watch Out &lt;br&gt; The Moderns Responsive Website&lt;/h3&gt;
+                                        &lt;/div&gt;
+
+                                        &lt;div class="animated zoomIn"&gt;
+                                            &lt;a class="btn btn-lg button button--white" href="#work" role="button" title="View Our Work"&gt;View Our Work&lt;/a&gt;
+                                        &lt;/div&gt;
+
+                                    &lt;/div&gt;
+
+                                &lt;/div&gt;
+
+                            &lt;/div&gt;
+
+                        &lt;/section&gt;
+
+                        &lt;!-- Home End --&gt;
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <h3>Actualizar Animate</h3>
+                    <pre>
+                        <code class="html" data-trim data-noescape>
+                        &lt;!-- Home Start --&gt;
+
+                        &lt;section class="home"&gt;
+
+                            &lt;div class="home__cover home--cover parallax animated fadeIn"&gt;
+
+                                &lt;div class="home__content-box"&gt;
+
+                                    &lt;div class="home__content-box-inner text-center"&gt;
+
+                                        &lt;div class="home__heading home--heading animated zoomIn"&gt;
+                                            &lt;h3&gt;Watch Out &lt;br&gt; The Moderns Responsive Website&lt;/h3&gt;
+                                        &lt;/div&gt;
+
+                                        &lt;div class="home--btn animated zoomIn"&gt;
+                                            &lt;a class="btn btn-lg button button--white" href="#work" role="button" title="View Our Work"&gt;View Our Work&lt;/a&gt;
+                                        &lt;/div&gt;
+
+                                    &lt;/div&gt;
+
+                                &lt;/div&gt;
+
+                            &lt;/div&gt;
+
+                        &lt;/section&gt;
+
+                        &lt;!-- Home End --&gt;
                         </code>
                     </pre>
                 </section>
@@ -1439,8 +1679,8 @@
         // - https://github.com/hakimel/reveal.js#dependencies
         Reveal.initialize({
             dependencies: [{
-                    src: 'plugin/markdown/marked.js'
-                },
+                src: 'plugin/markdown/marked.js'
+            },
                 {
                     src: 'plugin/markdown/markdown.js'
                 },
@@ -1465,7 +1705,7 @@
                 titleSelector: 'h1,h3',
             }
         });
-    </script>
+        </script>
 </body>
 
 </html>
