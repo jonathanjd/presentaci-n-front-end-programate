@@ -1327,7 +1327,7 @@
                                     &lt;script src="js/custom.js"&gt;&lt;/script&gt;
                                   &lt;/body&gt;
                                 &lt;/html&gt;
-
+                                alt=""
                         </code>
                     </pre>
                 </section>
@@ -1337,12 +1337,45 @@
                 </section>
 
                 <section>
-                    <p><i class="fa fa-folder"></i></p>
-                    <h3>Aplicando SMACSS</h3>
+                    <h3>Font</h3>
+                    <p>Roboto Condensed</p>
+                    <ul>
+                        <li>
+                            <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>
+                        </li>
+                        <li>
+                            <a href="https://www.fontsquirrel.com/" target="_blank">Fonts Quirrel</a>
+                        </li>
+                        <li>
+                            <a href="http://fontpair.co/" target="_blank" >Font Pair</a>
+                        </li>
+                    </ul>
                 </section>
 
-                <section data-background-image="img/estructura.png" data-background-size="auto" data-menu-title="Estructura SASS">
+                <section>
+                    <h3>Colors</h3>
+                    <ul>
+                        <li>
+                            <a href="https://coolors.co/" target="_blank">Coolors</a>
+                        </li>
+                        <li>
+                            <a href="http://www.color-blindness.com/" target="_blank">Color Blindness</a>
+                        </li>
+                    </ul>
+                </section>
 
+                <section>
+                    <h3>Paleta</h3>
+                    <img src="img/paleta-de-colores.png">
+                </section>
+
+                <section>
+                    <h3>Icons</h3>
+                    <ul>
+                        <li>
+                            <a href="http://fontawesome.io/" target="_blank">Font Awesome</a>
+                        </li>
+                    </ul>
                 </section>
 
             </section>
@@ -1352,9 +1385,37 @@
                     <h1>Sección Home</h1>
                 </section>
                 <section>
-                    <p><i class="fa fa-paint-brush"></i></p>
-                    <h3>Mis Variables</h3>
-                    <p><i class="fa fa-file"> _variables.scss</i></p>
+                    <h3>Agregando HTML</h3>
+                    <pre>
+                        <code class="html" data-trim data-noescape>
+                            &lt;section id="home"&gt;
+
+                                &lt;div id="home-cover"&gt;
+
+                                    &lt;div id="home-content-box"&gt;
+
+                                        &lt;div id="home-content-box-inner"&gt;
+
+                                            &lt;div id="home-heading"&gt;
+                                                &lt;h3&gt;Watch Out &lt;br&gt; The Moderns Responsive Website&lt;/h3&gt;
+                                            &lt;/div&gt;
+
+                                            &lt;div id="home-btn"&gt;
+                                                &lt;a class="btn btn-lg" href="#work" role="button" title="View Our Work"&gt;View Our Work&lt;/a&gt;
+                                            &lt;/div&gt;
+
+                                        &lt;/div&gt;
+
+                                    &lt;/div&gt;
+
+                                &lt;/div&gt;
+
+                            &lt;/section&gt;
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <h3>Agregando CSS#1</h3>
                     <pre>
                         <code class="css" data-trim data-noescape>
                                 //Font Family
@@ -1365,308 +1426,523 @@
                                 $blueBayoux: #64707B;
                                 $white: #fff;
                                 $black: #000;
-                        </code>
-                    </pre>
-                </section>
-                <section>
-                    <p><i class="fa fa-paint-brush"></i></p>
-                    <h3>Font Family</h3>
-                    <p><a href="https://fonts.google.com/" target="_blank">Google Fonts</a></p>
-                    <p>Roboto Condensed</p>
-                </section>
-                <section>
-                    <p><i class="fa fa-paint-brush"></i></p>
-                    <h3>Colores</h3>
-                    <p><a href="https://coolors.co/" target="_blank">Coolors</a></p>
-                    <p><a href="http://www.color-blindness.com/" target="_blank">Color Blindness</a></p>
-                </section>
-                <section>
-                    <p><i class="fa fa-paint-brush"></i></p>
-                    <h3>Import Variables</h3>
-                    <p><i class="fa fa-file"> style.scss</i></p>
-                    <pre>
-                        <code class="css" data-trim data-noescape>
-                            @import 'variables';
-                        </code>
-                    </pre>
-                </section>
-                <section>
-                    <h3><i class="fa fa-paint-brush"></i> Mi Base Setup</h3>
-                    <p><i class="fa fa-file"> _base.scss</i></p>
-                    <pre>
-                        <code class="css" data-trim data-noescape>
-                                html {
-                                    height: 100%;
+
+                                /*===============================================
+                                                      General
+                                ================================================*/
+                                html , body {
+                                  height: 100%;
                                 }
                                 body {
-                                    @extend html;
-                                    font-family: $font;
+                                  font-family: $font;
                                 }
 
-                                p {
-                                    color: $blueBayoux;
-                                    font-size: 16px;
-                                    font-weight: 300;
+
+                                /*===============================================
+                                                      HOME
+                                ================================================*/
+                                #home {
+                                  height: 100%;
                                 }
 
-                                h3 {
-                                    color: $steelGrey;
-                                    text-transform: uppercase;
+                                #home-cover {
+                                  height: 100%;
+                                  background-image: url("../img/bg-home.jpg");
+                                  background-repeat: no-repeat;
+                                  background-size: cover;
+                                  background-position: center;
+
                                 }
-                            </code>
-                    </pre>
-                </section>
-                <section>
-                    <p><i class="fa fa-paint-brush"></i></p>
-                    <h3>Import Base</h3>
-                    <p><i class="fa fa-file"> style.scss</i></p>
-                    <pre>
-                        <code class="css" data-trim data-noescape>
-                            @import 'variables';
-                            @import 'base/base';
                         </code>
                     </pre>
                 </section>
-                <section data-menu-title="Agregar HTML">
-                    <p><i class="fab fa-html5"></i></p>
-                    <h3>Agregar HTML / <i class="fa fa-file"></i> Index.html</h3>
+                <section>
+                    <h3>Update CSS#2</h3>
+                    <pre>
+                        <code class="css" data-trim data-noescape>
+    /*===============================================
+                            HOME
+    ================================================*/
+        #home {
+          height: 100%;
+      }
+
+      #home-cover {
+          height: 100%;
+          background-image: url("../img/bg-home.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+
+      }
+
+      #home-content-box {
+          width: 100%;
+          height: 100%;
+          display: table;
+      }
+
+      #home-content-box-inner {
+          display: table-cell;
+          vertical-align: middle;
+      }
+
+      #home-heading {
+          h3 {
+              color: $white;
+              font-size: 55px;
+              font-weight: 700;
+              margin: 20px 0 20px 0;
+          }
+      }
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <h3>Update CSS#3</h3>
+                    <pre>
+                        <code class="css" data-trim data-noescape>
+            /*===============================================
+                                Button
+            ================================================*/
+
+            .btn-general {
+                border-width: 2px;
+                border-radius: 0;
+                padding: 12px 26px 12px 26px;
+                font-size: 16px;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+
+            .btn-white {
+                border-color: $white;
+                color: $white;
+                &:hover,
+                &:focus {
+                    background-color: $white;
+                    color: $steelGrey;
+                }
+            }
+                        </code>
+                    </pre>
+                </section>
+
+                <section>
+                    <h3>Agregando Parallax</h3>
+                    <pre>
+                        <code class="css" data-trim data-noescape>
+            /*===============================================
+                                Parallax
+            ================================================*/
+
+            .bg-parallax {
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+            }
+                        </code>
+                    </pre>
+                </section>
+
+                <section>
+                    <h3>Animate</h3>
+                    <p><a href="https://github.com/daneden/animate.css" target="_blank">Animate.css</a></p>
+                    <pre>
+                        <code class="css" data-trim data-noescape>
+            /*===============================================
+                                Animate
+            ================================================*/
+
+                #home-cover {
+                    animation-delay: .1s;
+                }
+
+                #home-heading {
+                    animation-delay: .5s;
+                }
+
+                #home-btn {
+                    animation-delay: 1s;
+                }
+                        </code>
+                    </pre>
+                </section>
+
+                <section>
+                    <h3>Update HTML</h3>
                     <pre>
                         <code class="html" data-trim data-noescape>
-                            &lt;!-- Home Start --&gt;
+                                    &lt;section id="home"&gt;
 
-                            &lt;section class="home"&gt;
+                                        &lt;div id="home-cover" class="bg-parallax animated fadeIn"&gt;
 
-                            &lt;div class="home__cover parallax"&gt;
+                                            &lt;div id="home-content-box"&gt;
 
-                            &lt;div class="home__content-box"&gt;
+                                                &lt;div id="home-content-box-inner" class="text-center"&gt;
 
-                            &lt;div class="home__content-box-inner"&gt;
+                                                    &lt;div id="home-heading" class="animated zoomIn"&gt;
+                                                        &lt;h3&gt;Watch Out &lt;br&gt; The Moderns Responsive Website&lt;/h3&gt;
+                                                    &lt;/div&gt;
 
-                            &lt;div class="home__heading"&gt;
-                            &lt;h3&gt;Watch Out &lt;br&gt; The Moderns Responsive Website&lt;/h3&gt;
-                            &lt;/div&gt;
+                                                    &lt;div id="home-btn" class="animated zoomIn"&gt;
+                                                        &lt;a class="btn btn-lg btn-general btn-white" href="#work" role="button" title="View Our Work"&gt;View Our Work&lt;/a&gt;
+                                                    &lt;/div&gt;
 
-                            &lt;a class="btn btn-lg button button--white" href="#work" role="button" title="View Our Work"&gt;View Our Work&lt;/a&gt;
+                                                &lt;/div&gt;
 
-                                    &lt;/div&gt;
+                                            &lt;/div&gt;
 
-                                    &lt;/div&gt;
-
-                                    &lt;/div&gt;
+                                        &lt;/div&gt;
 
                                     &lt;/section&gt;
-
-                                    &lt;!-- Home End --&gt;
-                                </code>
-                            </pre>
-                        </section>
-                        <section data-menu-title="Agregando Layout">
-                            <p><i class="fab fa-sass"></i></p>
-                            <h3>Agregando Layout / <i class="fa fa-file"></i> _home.scss</h3>
-                            <pre>
-                                <code class="css" data-trim data-noescape>
-                                    /*===============================================
-                            Bloque
-                            ================================================*/
-                            .home {
-                                height: 100%;
-                            }
-
-                            /*===============================================
-                            Elementos
-                            ================================================*/
-
-                            .home__cover {
-                                height: 100%;
-                                background-image: url("../img/bg-home.jpg");
-                            }
-
-                            .home__content-box {
-                                width: 100%;
-                                height: 100%;
-                                display: table;
-                            }
-
-                            .home__content-box-inner {
-                                display: table-cell;
-                                vertical-align: middle;
-                            }
-
-                            .home__heading {
-                                h3 {
-                                    color: $white;
-                                    font-size: 55px;
-                                    font-weight: 700;
-                                    margin: 20px 0 20px 0;
-                                }
-                            }
-
-                            /*===============================================
-                            Modificadores / Animate
-                            ================================================*/
-
-                            .home--cover {
-                                animation-delay: .1s;
-                            }
-
-                            .home--heading {
-                                animation-delay: .5s;
-                            }
-
-                            .home--btn {
-                                animation-delay: 1s;
-                            }
-
                         </code>
                     </pre>
                 </section>
-                <section data-menu-title="Add Module Parallax">
-                    <p><i class="fab fa-sass"></i></p>
-                    <h3>Module Parallax / <i class="fa fa-file"></i> _parallax.scss</h3>
-                    <pre>
-                        <code class="css" data-trim data-noescape>
-                            .parallax {
-                                background-repeat: no-repeat;
-                                background-size: cover;
-                                background-position: center;
-                                background-attachment: fixed;
-                            }
-                        </code>
-                    </pre>
-                </section>
-                <section data-menu-title="Add Module Button">
-                    <p><i class="fab fa-sass"></i></p>
-                    <h3>Module Button / <i class="fa fa-file"></i> _button.scss</h3>
-                    <pre>
-                        <code class="css" data-trim data-noescape>
-                            .button {
-                                border-width: 2px;
-                                border-radius: 0;
-                                padding: 12px 26px 12px 26px;
-                                font-size: 16px;
-                                font-weight: 400;
-                                text-transform: uppercase;
-                            }
 
-                            .button--white {
-                                border-color: $white;
-                                color: $white;
-                                &:hover, &:focus {
-                                    background-color: $white;
-                                    color: $steelGrey;
-                                }
-                            }
+            </section>
 
-                            .button--blue {
-                                border-color: $mediumTurquoise;
-                                color: $mediumTurquoise;
-                                &:hover, &:focus {
-                                    background-color: $mediumTurquoise;
-                                    color: $white;
-                                }
-                            }
-
-                            .button--backToTop {
-                                position: fixed;
-                                bottom: 20px;
-                                right: 20px;
-                                font-size: 22px;
-                                padding: 3px 15px;
-                                border-radius: 0;
-                                display: none;
-                            }
-
-                        </code>
-                    </pre>
-                </section>
+            <section>
                 <section>
                     <p><i class="fa fa-paint-brush"></i></p>
-                    <h3>Import Module+Layout</h3>
-                    <p><i class="fa fa-file"> style.scss</i></p>
+                    <h1>Sección Servicios</h1>
+                </section>
+
+                <section>
+                    <h3>Agregando HTML</h3>
+                    <pre>
+                        <code class="html" data-trim data-noescape>
+                                <!-- Section Service -->
+        &lt;section id="services"&gt;
+
+            &lt;div class="content-box"&gt;
+                &lt;div class="content-title"&gt;
+                    &lt;h3&gt;Services&lt;/h3&gt;
+                    &lt;div class="content-title-underline"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class="container"&gt;
+                    &lt;div class="row"&gt;
+                        &lt;div class="col-md-4"&gt;
+                            &lt;div class="service-item"&gt;
+                                &lt;div class="service-item-icon"&gt;
+                                    &lt;i class="fa fa-paint-brush fa-3x"&gt;&lt;/i&gt;
+                                &lt;/div&gt;
+                                &lt;div class="service-item-title"&gt;
+                                    &lt;h3&gt;Web Design&lt;/h3&gt;
+                                &lt;/div&gt;
+                                &lt;div class="service-item-desc"&gt;
+                                    &lt;p&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit.&lt;/p&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="col-md-4"&gt;
+                            &lt;div class="service-item"&gt;
+                                &lt;div class="service-item-icon"&gt;
+                                    &lt;i class="fa fa-laptop fa-3x"&gt;&lt;/i&gt;
+                                &lt;/div&gt;
+                                &lt;div class="service-item-title"&gt;
+                                    &lt;h3&gt;Web Development&lt;/h3&gt;
+                                &lt;/div&gt;
+                                &lt;div class="service-item-desc"&gt;
+                                    &lt;p&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit.&lt;/p&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="col-md-4"&gt;
+                            &lt;div class="service-item"&gt;
+                                &lt;div class="service-item-icon"&gt;
+                                    &lt;i class="fa fa-tablet fa-3x"&gt;&lt;/i&gt;
+                                &lt;/div&gt;
+                                &lt;div class="service-item-title"&gt;
+                                    &lt;h3&gt;Mobile Apps&lt;/h3&gt;
+                                &lt;/div&gt;
+                                &lt;div class="service-item-desc"&gt;
+                                    &lt;p&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit.&lt;/p&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class="col-md-4"&gt;
+                            &lt;div class="service-item"&gt;
+                                &lt;div class="service-item-icon"&gt;
+                                    &lt;i class="fa fa-search fa-3x"&gt;&lt;/i&gt;
+                                &lt;/div&gt;
+                                &lt;div class="service-item-title"&gt;
+                                    &lt;h3&gt;SEO Optimization&lt;/h3&gt;
+                                &lt;/div&gt;
+                                &lt;div class="service-item-desc"&gt;
+                                    &lt;p&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit.&lt;/p&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="col-md-4"&gt;
+                            &lt;div class="service-item"&gt;
+                                &lt;div class="service-item-icon"&gt;
+                                    &lt;i class="fa fa-pencil-square-o fa-3x"&gt;&lt;/i&gt;
+                                &lt;/div&gt;
+                                &lt;div class="service-item-title"&gt;
+                                    &lt;h3&gt;UX Design&lt;/h3&gt;
+                                &lt;/div&gt;
+                                &lt;div class="service-item-desc"&gt;
+                                    &lt;p&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit.&lt;/p&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="col-md-4"&gt;
+                            &lt;div class="service-item"&gt;
+                                &lt;div class="service-item-icon"&gt;
+                                    &lt;i class="fa fa-life-ring fa-3x"&gt;&lt;/i&gt;
+                                &lt;/div&gt;
+                                &lt;div class="service-item-title"&gt;
+                                    &lt;h3&gt;Support&lt;/h3&gt;
+                                &lt;/div&gt;
+                                &lt;div class="service-item-desc"&gt;
+                                    &lt;p&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit.&lt;/p&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                        </code>
+                    </pre>
+                </section>
+
+                <section>
+                    <h3>Agregando CSS#1</h3>
                     <pre>
                         <code class="css" data-trim data-noescape>
-                            @import 'variables';
-                            @import 'base/base';
+            /*===============================================
+                                Content
+            ================================================*/
 
-                            @import 'module/parallax';
-                            @import 'module/button';
+            .content-box {
+                padding: 60px 0 60px 0;
+            }
 
-                            @import 'layout/home';
+            .content-title {
+                h3 {
+                    font-size: 30px;
+                    font-weight: 700;
+                    text-align: center;
+                    margin: 0 0 30px 0;
+                }
+            }
+
+            .content-title-underline {
+                width: 30px;
+                height: 3px;
+                background-color: $mediumTurquoise;
+                margin: 0 auto 30px auto;
+            }
                         </code>
                     </pre>
                 </section>
+
                 <section>
-                    <p><i class="fab fa-css3"></i></p>
-                    <h1><a href="https://github.com/daneden/animate.css" target="_blank">Animate.css</a></h1>
+                    <h3>Update CSS#2</h3>
+                    <pre>
+                        <code class="css" data-trim data-noescape>
+            /*===============================================
+                                Services
+            ================================================*/
+
+            .service-item {
+                padding: 20px 0 20px 0;
+                margin-bottom: 20px;
+                cursor: pointer;
+            }
+
+            .service-item-icon {
+                i {
+                    color: $mediumTurquoise;
+                    float: left;
+                    padding: 15px;
+                    margin-right: 25px;
+                    width: 75px;
+                    height: 75px;
+                    text-align: center;
+                }
+            }
+
+            .service-item {
+                &:hover {
+                    .service-item-icon {
+                        i {
+                            color: $white;
+                            background-color: $mediumTurquoise;
+                        }
+                    }
+                }
+            }
+
+            .service-item-title {
+                h3 {
+                    font-size: 20px;
+                    font-weight: 400;
+                    margin: 0 0 10px 0;
+                }
+            }
+
+            .service-item-desc {
+                p {
+                    margin: 0;
+                    padding-left: 85px;
+                }
+            }
+                        </code>
+                    </pre>
                 </section>
+
                 <section>
-                    <h3>Actualizar HTML</h3>
+                    <h3>Update CSS#3</h3>
+                    <pre>
+                        <code class="css" data-trim data-noescape>
+            /*===============================================
+                                General
+           ================================================*/
+
+           html,
+           body {
+               height: 100%;
+           }
+
+           body {
+               font-family: $font;
+           }
+
+           p {
+               color: $blueBayoux;
+               font-size: 16px;
+               font-weight: 300;
+           }
+
+           h3 {
+               color: $steelGrey;
+               text-transform: uppercase;
+           }
+                        </code>
+                    </pre>
+                </section>
+
+                <section>
+                    <h3>Animation</h3>
+                    <p><a href="http://mynameismatthieu.com/WOW/" target="_blank">WOW</a> / custom.js</p>
+                    <pre>
+                        <code class="javascript" data-trim data-noescape>
+            /*===============================================
+                                Services
+            ================================================*/
+            $(document).ready(function () {
+
+                //Animate Scroll
+                new WOW().init();
+
+            });
+                        </code>
+                    </pre>
+                </section>
+
+                <section>
+                    <h3>Update HTML</h3>
                     <pre>
                         <code class="html" data-trim data-noescape>
-                        &lt;!-- Home Start --&gt;
+                                    &lt;section id="services"&gt;
 
-                        &lt;section class="home"&gt;
+                                        &lt;div class="content-box"&gt;
+                                            &lt;div class="content-title wow fadeInDown" data-wow-duration="1s" data-wow-delay=".5s"&gt;
+                                                &lt;h3&gt;Services&lt;/h3&gt;
+                                                &lt;div class="content-title-underline"&gt;&lt;/div&gt;
+                                            &lt;/div&gt;
 
-                            &lt;div class="home__cover parallax animated fadeIn"&gt;
+                                            &lt;div class="container"&gt;
+                                                &lt;div class="row wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s"&gt;
+                                                    &lt;div class="col-md-4"&gt;
+                                                        &lt;div class="service-item"&gt;
+                                                            &lt;div class="service-item-icon"&gt;
+                                                                &lt;i class="fa fa-paint-brush fa-3x"&gt;&lt;/i&gt;
+                                                            &lt;/div&gt;
+                                                            &lt;div class="service-item-title"&gt;
+                                                                &lt;h3&gt;Web Design&lt;/h3&gt;
+                                                            &lt;/div&gt;
+                                                            &lt;div class="service-item-desc"&gt;
+                                                                &lt;p&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit.&lt;/p&gt;
+                                                            &lt;/div&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;div class="col-md-4"&gt;
+                                                        &lt;div class="service-item"&gt;
+                                                            &lt;div class="service-item-icon"&gt;
+                                                                &lt;i class="fa fa-laptop fa-3x"&gt;&lt;/i&gt;
+                                                            &lt;/div&gt;
+                                                            &lt;div class="service-item-title"&gt;
+                                                                &lt;h3&gt;Web Development&lt;/h3&gt;
+                                                            &lt;/div&gt;
+                                                            &lt;div class="service-item-desc"&gt;
+                                                                &lt;p&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit.&lt;/p&gt;
+                                                            &lt;/div&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;div class="col-md-4"&gt;
+                                                        &lt;div class="service-item"&gt;
+                                                            &lt;div class="service-item-icon"&gt;
+                                                                &lt;i class="fa fa-tablet fa-3x"&gt;&lt;/i&gt;
+                                                            &lt;/div&gt;
+                                                            &lt;div class="service-item-title"&gt;
+                                                                &lt;h3&gt;Mobile Apps&lt;/h3&gt;
+                                                            &lt;/div&gt;
+                                                            &lt;div class="service-item-desc"&gt;
+                                                                &lt;p&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit.&lt;/p&gt;
+                                                            &lt;/div&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/div&gt;
 
-                                &lt;div class="home__content-box"&gt;
-
-                                    &lt;div class="home__content-box-inner text-center"&gt;
-
-                                        &lt;div class="home__heading animated zoomIn"&gt;
-                                            &lt;h3&gt;Watch Out &lt;br&gt; The Moderns Responsive Website&lt;/h3&gt;
-                                        &lt;/div&gt;
-
-                                        &lt;div class="animated zoomIn"&gt;
-                                            &lt;a class="btn btn-lg button button--white" href="#work" role="button" title="View Our Work"&gt;View Our Work&lt;/a&gt;
-                                        &lt;/div&gt;
-
-                                    &lt;/div&gt;
-
-                                &lt;/div&gt;
-
-                            &lt;/div&gt;
-
-                        &lt;/section&gt;
-
-                        &lt;!-- Home End --&gt;
+                                                    &lt;div class="col-md-4"&gt;
+                                                        &lt;div class="service-item"&gt;
+                                                            &lt;div class="service-item-icon"&gt;
+                                                                &lt;i class="fa fa-search fa-3x"&gt;&lt;/i&gt;
+                                                            &lt;/div&gt;
+                                                            &lt;div class="service-item-title"&gt;
+                                                                &lt;h3&gt;SEO Optimization&lt;/h3&gt;
+                                                            &lt;/div&gt;
+                                                            &lt;div class="service-item-desc"&gt;
+                                                                &lt;p&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit.&lt;/p&gt;
+                                                            &lt;/div&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;div class="col-md-4"&gt;
+                                                        &lt;div class="service-item"&gt;
+                                                            &lt;div class="service-item-icon"&gt;
+                                                                &lt;i class="fa fa-pencil-square-o fa-3x"&gt;&lt;/i&gt;
+                                                            &lt;/div&gt;
+                                                            &lt;div class="service-item-title"&gt;
+                                                                &lt;h3&gt;UX Design&lt;/h3&gt;
+                                                            &lt;/div&gt;
+                                                            &lt;div class="service-item-desc"&gt;
+                                                                &lt;p&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit.&lt;/p&gt;
+                                                            &lt;/div&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;div class="col-md-4"&gt;
+                                                        &lt;div class="service-item"&gt;
+                                                            &lt;div class="service-item-icon"&gt;
+                                                                &lt;i class="fa fa-life-ring fa-3x"&gt;&lt;/i&gt;
+                                                            &lt;/div&gt;
+                                                            &lt;div class="service-item-title"&gt;
+                                                                &lt;h3&gt;Support&lt;/h3&gt;
+                                                            &lt;/div&gt;
+                                                            &lt;div class="service-item-desc"&gt;
+                                                                &lt;p&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit.&lt;/p&gt;
+                                                            &lt;/div&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
                         </code>
                     </pre>
                 </section>
-                <section>
-                    <h3>Actualizar Animate</h3>
-                    <pre>
-                        <code class="html" data-trim data-noescape>
-                        &lt;!-- Home Start --&gt;
 
-                        &lt;section class="home"&gt;
-
-                            &lt;div class="home__cover home--cover parallax animated fadeIn"&gt;
-
-                                &lt;div class="home__content-box"&gt;
-
-                                    &lt;div class="home__content-box-inner text-center"&gt;
-
-                                        &lt;div class="home__heading home--heading animated zoomIn"&gt;
-                                            &lt;h3&gt;Watch Out &lt;br&gt; The Moderns Responsive Website&lt;/h3&gt;
-                                        &lt;/div&gt;
-
-                                        &lt;div class="home--btn animated zoomIn"&gt;
-                                            &lt;a class="btn btn-lg button button--white" href="#work" role="button" title="View Our Work"&gt;View Our Work&lt;/a&gt;
-                                        &lt;/div&gt;
-
-                                    &lt;/div&gt;
-
-                                &lt;/div&gt;
-
-                            &lt;/div&gt;
-
-                        &lt;/section&gt;
-
-                        &lt;!-- Home End --&gt;
-                        </code>
-                    </pre>
-                </section>
             </section>
         </div>
     </div>
