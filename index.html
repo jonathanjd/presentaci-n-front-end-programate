@@ -1944,6 +1944,593 @@
                 </section>
 
             </section>
+
+            <section>
+                <section>
+                    <p><i class="fa fa-paint-brush"></i></p>
+                    <h3>Section About</h3>
+                </section>
+                <section>
+                    <h3>Agregando HTML</h3>
+                    <pre>
+                        <code class="html" data-trim data-noescape>
+                                &lt;section id="about"&gt;
+                                        &lt;div id="about-bg-diagonal"&gt;
+
+                                        &lt;/div&gt;
+
+                                        &lt;div class="container"&gt;
+                                            &lt;div class="row"&gt;
+                                                &lt;div class="col-md-4"&gt;
+                                                    &lt;div id="about-content-box"&gt;
+                                                        &lt;div id="about-content-box-outer"&gt;
+                                                            &lt;div id="about-content-box-inner"&gt;
+                                                               &lt;div class="content-title wow fadeInDown" data-wow-duration="1s" data-wow-delay=".5s"&gt;
+                                                                   &lt;h3&gt;About Vesco &lt;/h3&gt;
+                                                                   &lt;div class="content-title-underline"&gt;&lt;/div&gt;
+
+                                                                   &lt;div id="about-btn"&gt;
+                                                                       &lt;a class="btn btn-lg btn-general" href="#work" role="button"&gt;
+                                                                           Out Work
+                                                                       &lt;/a&gt;
+                                                                   &lt;/div&gt;
+                                                                &lt;/div&gt;
+
+                                                                &lt;div id="about-desc"&gt;
+                                                                   &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                                       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                                       quis.
+                                                                   &lt;/p&gt;
+                                                               &lt;/div&gt;
+
+                                                            &lt;/div&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/section&gt;
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <h3>Agregando CSS#1</h3>
+                    <pre>
+                        <code class="css" data-trim data-noescape>
+        /*===============================================
+                              About
+        ================================================*/
+        #about-content-box {
+            float: left;
+            height: 700px;
+        }
+
+        #about-content-box-outer {
+            width: 100%;
+            height: 100%;
+            display: table;
+        }
+
+        #about-content-box-inner {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        #about {
+
+            .content-title {
+
+                h3 {
+                    text-align:left
+                }
+
+                .content-title-underline {
+                    margin: 0 0 30px 0;
+                }
+
+            }
+
+        }
+
+        #about-desc {
+            p {
+                margin-bottom: 30px;
+            }
+        }
+                        </code>
+                    </pre>
+                </section>
+
+                <section>
+                    <h3>Update CSS#2</h3>
+                    <pre>
+                        <code class="css" data-trim data-noescape>
+                                .btn-blue {
+                                    border-color: $mediumTurquoise;
+                                    color: $mediumTurquoise;
+                                    &:hover, &:focus {
+                                        background-color: $mediumTurquoise;
+                                        color: $white;
+                                    }
+                                }
+                        </code>
+                    </pre>
+                </section>
+
+                <section>
+                    <h3>Update HTML</h3>
+                    <pre>
+                        <code class="html" data-trim data-noescape>
+                                &lt;section id="about"&gt;
+                                        &lt;div id="about-bg-diagonal"&gt;
+
+                                        &lt;/div&gt;
+
+                                        &lt;div class="container"&gt;
+                                            &lt;div class="row"&gt;
+                                                &lt;div class="col-md-4"&gt;
+                                                    &lt;div id="about-content-box"&gt;
+                                                        &lt;div id="about-content-box-outer"&gt;
+                                                            &lt;div id="about-content-box-inner"&gt;
+                                                                &lt;div class="content-title wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s"&gt;
+                                                                        &lt;h3&gt;About Vesco&lt;/h3&gt;
+                                                                    &lt;div class="content-title-underline"&gt;&lt;/div&gt;
+                                                                &lt;/div&gt;
+                                                                &lt;div id="about-desc" class="wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s"&gt;
+                                                                    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                                        quis.&lt;/p&gt;
+                                                                &lt;/div&gt;
+                                                                &lt;div id="about-btn" class="wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s"&gt;
+                                                                    &lt;a class="btn btn-lg btn-general btn-blue" href="#work" role="button"&gt;
+                                                                            Out Work
+                                                                        &lt;/a&gt;
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/section&gt;
+
+                        </code>
+                    </pre>
+                </section>
+
+                <section>
+                    <h3>Update CSS#3</h3>
+                    <pre>
+                        <code class="css" data-trim data-noescape>
+                                #about-bg-diagonal {
+                                    width: 60%;
+                                    height: 700px;
+                                    float: right;
+                                    background-image: url(../img/bg-about.jpg);
+                                    border-left: 200px solid $white;
+                                    border-top: 700px solid transparent;
+                                }
+                        </code>
+                    </pre>
+                </section>
+
+                <section>
+                    <h3>Update HTML</h3>
+                    <pre>
+                        <code class="html" data-trim data-noescape>
+                                &lt;section id="about"&gt;
+
+                                        &lt;div id="about-bg-diagonal" class="bg-parallax"&gt;
+
+                                        &lt;/div&gt;
+
+                                        &lt;div class="container"&gt;
+                                            &lt;div class="row"&gt;
+                                                &lt;div class="col-md-4"&gt;
+                                                    &lt;div id="about-content-box"&gt;
+                                                        &lt;div id="about-content-box-outer"&gt;
+                                                            &lt;div id="about-content-box-inner"&gt;
+                                                                &lt;div class="content-title wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s"&gt;
+                                                                        &lt;h3&gt;About Vesco&lt;/h3&gt;
+                                                                    &lt;div class="content-title-underline"&gt;&lt;/div&gt;
+                                                                &lt;/div&gt;
+                                                                &lt;div id="about-desc" class="wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s"&gt;
+                                                                    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                                        quis.&lt;/p&gt;
+                                                                &lt;/div&gt;
+                                                                &lt;div id="about-btn" class="wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s"&gt;
+                                                                    &lt;a class="btn btn-lg btn-general btn-blue" href="#work" role="button"&gt;
+                                                                            Our Work
+                                                                        &lt;/a&gt;
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+
+                                    &lt;/section&gt;
+                        </code>
+                    </pre>
+                </section>
+
+            </section>
+
+            <section>
+                <section>
+                    <p><i class="fa fa-paint-brush"></i></p>
+                    <h3>Section Work</h3>
+                </section>
+                <section>
+                    <h3>Agregando HTML</h3>
+                    <pre>
+                        <code class="html" data-trim data-noescape>
+                                    &lt;section id="work"&gt;
+
+                                        &lt;div class="content-box"&gt;
+                                            &lt;div class="content-title wow animated fadeInDown" data-wow-delay="1s" data-wow-delay=".5s"&gt;
+                                                &lt;h3&gt;Our Work&lt;/h3&gt;
+                                                &lt;div class="content-title-underline"&gt;&lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+
+                                        &lt;div class="container-fluid"&gt;
+                                            &lt;div class="row wow animated fadeInUp" data-wow-delay="1s" data-wow-delay=".5s"&gt;
+                                                &lt;div class="col-md-3 no-padding-lr"&gt;
+                                                    &lt;div class="img-wrapper"&gt;
+                                                        &lt;a href="img/work/1.jpg" title="Work Description"&gt;
+                                                            &lt;img src="img/work/1.jpg" class="img-responsive" alt="Work"&gt;
+                                                        &lt;/a&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="col-md-3 no-padding-lr"&gt;
+                                                    &lt;div class="img-wrapper"&gt;
+                                                        &lt;a href="img/work/2.jpg" title="Work Description"&gt;
+                                                            &lt;img src="img/work/2.jpg" class="img-responsive" alt="Work"&gt;
+                                                        &lt;/a&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="col-md-3 no-padding-lr"&gt;
+                                                    &lt;div class="img-wrapper"&gt;
+                                                        &lt;a href="img/work/3.jpg" title="Work Description"&gt;
+                                                            &lt;img src="img/work/3.jpg" class="img-responsive" alt="Work"&gt;
+                                                        &lt;/a&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="col-md-3 no-padding-lr"&gt;
+                                                    &lt;div class="img-wrapper"&gt;
+                                                        &lt;a href="img/work/4.jpg" title="Work Description"&gt;
+                                                            &lt;img src="img/work/4.jpg" class="img-responsive" alt="Work"&gt;
+                                                        &lt;/a&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="col-md-3 no-padding-lr"&gt;
+                                                    &lt;div class="img-wrapper"&gt;
+                                                        &lt;a href="img/work/5.jpg" title="Work Description"&gt;
+                                                            &lt;img src="img/work/5.jpg" class="img-responsive" alt="Work"&gt;
+                                                        &lt;/a&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="col-md-3 no-padding-lr"&gt;
+                                                    &lt;div class="img-wrapper"&gt;
+                                                        &lt;a href="img/work/6.jpg" title="Work Description"&gt;
+                                                            &lt;img src="img/work/6.jpg" class="img-responsive" alt="Work"&gt;
+                                                        &lt;/a&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="col-md-3 no-padding-lr"&gt;
+                                                    &lt;div class="img-wrapper"&gt;
+                                                        &lt;a href="img/work/7.jpg" title="Work Description"&gt;
+                                                            &lt;img src="img/work/7.jpg" class="img-responsive" alt="Work"&gt;
+                                                        &lt;/a&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="col-md-3 no-padding-lr"&gt;
+                                                    &lt;div class="img-wrapper"&gt;
+                                                        &lt;a href="img/work/8.jpg" title="Work Description"&gt;
+                                                            &lt;img src="img/work/8.jpg" class="img-responsive" alt="Work"&gt;
+                                                        &lt;/a&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+
+                                    &lt;/section&gt;
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <h3>Agregando CSS#1</h3>
+                    <pre>
+                        <code class="css" data-trim data-noescape>
+        /*===============================================
+                                Work
+        ================================================*/
+        .row {
+            .no-padding-lr {
+                padding-left:0;
+                padding-right:0;
+            }
+        }
+                        </code>
+                    </pre>
+                </section>
+
+                <section>
+                    <h3>Update CSS#2</h3>
+                    <pre>
+                        <code class="css" data-trim data-noescape>
+                                .img-wrapper {
+
+                                    overflow: hidden;
+
+                                    img {
+
+                                        transition: transform .5s ease;
+
+                                        &:hover {
+                                            transform:scale(1.5);
+                                        }
+                                    }
+
+                                }
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <h3>Galería</h3>
+                    <p><a href="http://dimsemenov.com/plugins/magnific-popup/" target="_blank">Magnific Popup</a> / custom.js</p>
+                    <pre>
+                        <code class="javascript" data-trim data-noescape>
+        /*===============================================
+                              Work
+        ================================================*/
+        $(document).ready(function(){
+
+            $("#work").magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                gallery: {
+                    enabled: true
+                }
+            });
+
+        });
+
+                        </code>
+                    </pre>
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <p><i class="fa fa-paint-brush"></i></p>
+                    <h3>Section Team</h3>
+                </section>
+
+                <section>
+                    <h3>Agregando HTML</h3>
+                    <pre>
+                        <code class="html" data-trim data-noescape>
+                                    &lt;section id="team"&gt;
+
+                                        &lt;div class="content-box"&gt;
+                                            &lt;div class="content-title wow animated fadeInDown" data-wow-delay="1s" data-wow-delay=".5s"&gt;
+                                                &lt;h3&gt;Our Team&lt;/h3&gt;
+                                                &lt;div class="content-title-underline"&gt;&lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+
+                                        &lt;div class="container"&gt;
+                                            &lt;div class="row wow animated fadeInUp" data-wow-delay="1s" data-wow-delay=".5s"&gt;
+                                                &lt;div class="col-md-12"&gt;
+                                                    &lt;div id="team-members"&gt;
+
+                                                        &lt;div class="team-member"&gt;
+
+                                                            &lt;img src="img/team/team-1.jpg" class="img-responsive" alt="Team Member"&gt;
+
+                                                            &lt;div class="team-member-info text-center"&gt;
+                                                                &lt;h4 class="team-member-name"&gt;Pedro Perez&lt;/h4&gt;
+                                                                &lt;h4 class="team-member-designation"&gt;CEO&lt;/h4&gt;
+                                                                &lt;ul class="social-list"&gt;
+                                                                    &lt;li&gt;&lt;a href="#" class="social-icon icon-gray"&gt;&lt;i class="fa fa-facebook"&gt;&lt;/a&gt;&lt;/i&gt;&lt;/li&gt;
+                                                                    &lt;li&gt;&lt;a href="#" class="social-icon icon-gray"&gt;&lt;i class="fa fa-twitter"&gt;&lt;/a&gt;&lt;/i&gt;&lt;/li&gt;
+                                                                    &lt;li&gt;&lt;a href="#" class="social-icon icon-gray"&gt;&lt;i class="fa fa-google-plus"&gt;&lt;/a&gt;&lt;/i&gt;&lt;/li&gt;
+                                                                &lt;/ul&gt;
+                                                            &lt;/div&gt;
+
+                                                        &lt;/div&gt;
+
+                                                        &lt;div class="team-member"&gt;
+
+                                                            &lt;img src="img/team/team-2.jpg" class="img-responsive" alt="Team Member"&gt;
+
+                                                            &lt;div class="team-member-info text-center"&gt;
+                                                                &lt;h4 class="team-member-name"&gt;Sara Smith&lt;/h4&gt;
+                                                                &lt;h4 class="team-member-designation"&gt;Co-Founder&lt;/h4&gt;
+                                                                &lt;ul class="social-list"&gt;
+                                                                    &lt;li&gt;&lt;a href="#" class="social-icon icon-gray"&gt;&lt;i class="fa fa-facebook"&gt;&lt;/a&gt;&lt;/i&gt;&lt;/li&gt;
+                                                                    &lt;li&gt;&lt;a href="#" class="social-icon icon-gray"&gt;&lt;i class="fa fa-twitter"&gt;&lt;/a&gt;&lt;/i&gt;&lt;/li&gt;
+                                                                    &lt;li&gt;&lt;a href="#" class="social-icon icon-gray"&gt;&lt;i class="fa fa-google-plus"&gt;&lt;/a&gt;&lt;/i&gt;&lt;/li&gt;
+                                                                &lt;/ul&gt;
+                                                            &lt;/div&gt;
+
+                                                        &lt;/div&gt;
+
+                                                        &lt;div class="team-member"&gt;
+
+                                                            &lt;img src="img/team/team-3.jpg" class="img-responsive" alt="Team Member"&gt;
+
+                                                            &lt;div class="team-member-info text-center"&gt;
+                                                                &lt;h4 class="team-member-name"&gt;Luis Segovia&lt;/h4&gt;
+                                                                &lt;h4 class="team-member-designation"&gt;Sr. Developer&lt;/h4&gt;
+                                                                &lt;ul class="social-list"&gt;
+                                                                    &lt;li&gt;&lt;a href="#" class="social-icon icon-gray"&gt;&lt;i class="fa fa-facebook"&gt;&lt;/a&gt;&lt;/i&gt;&lt;/li&gt;
+                                                                    &lt;li&gt;&lt;a href="#" class="social-icon icon-gray"&gt;&lt;i class="fa fa-twitter"&gt;&lt;/a&gt;&lt;/i&gt;&lt;/li&gt;
+                                                                    &lt;li&gt;&lt;a href="#" class="social-icon icon-gray"&gt;&lt;i class="fa fa-google-plus"&gt;&lt;/a&gt;&lt;/i&gt;&lt;/li&gt;
+                                                                &lt;/ul&gt;
+                                                            &lt;/div&gt;
+
+                                                        &lt;/div&gt;
+
+                                                        &lt;div class="team-member"&gt;
+
+                                                            &lt;img src="img/team/team-4.jpg" class="img-responsive" alt="Team Member"&gt;
+
+                                                            &lt;div class="team-member-info text-center"&gt;
+                                                                &lt;h4 class="team-member-name"&gt;Juan Gonzalez&lt;/h4&gt;
+                                                                &lt;h4 class="team-member-designation"&gt;Sr. Design&lt;/h4&gt;
+                                                                &lt;ul class="social-list"&gt;
+                                                                    &lt;li&gt;&lt;a href="#" class="social-icon icon-gray"&gt;&lt;i class="fa fa-facebook"&gt;&lt;/a&gt;&lt;/i&gt;&lt;/li&gt;
+                                                                    &lt;li&gt;&lt;a href="#" class="social-icon icon-gray"&gt;&lt;i class="fa fa-twitter"&gt;&lt;/a&gt;&lt;/i&gt;&lt;/li&gt;
+                                                                    &lt;li&gt;&lt;a href="#" class="social-icon icon-gray"&gt;&lt;i class="fa fa-google-plus"&gt;&lt;/a&gt;&lt;/i&gt;&lt;/li&gt;
+                                                                &lt;/ul&gt;
+                                                            &lt;/div&gt;
+
+                                                        &lt;/div&gt;
+
+                                                        &lt;div class="team-member"&gt;
+
+                                                            &lt;img src="img/team/team-5.jpg" class="img-responsive" alt="Team Member"&gt;
+
+                                                            &lt;div class="team-member-info text-center"&gt;
+                                                                &lt;h4 class="team-member-name"&gt;Carlos Smith&lt;/h4&gt;
+                                                                &lt;h4 class="team-member-designation"&gt;Sr. Design&lt;/h4&gt;
+                                                                &lt;ul class="social-list"&gt;
+                                                                    &lt;li&gt;&lt;a href="#" class="social-icon icon-gray"&gt;&lt;i class="fa fa-facebook"&gt;&lt;/a&gt;&lt;/i&gt;&lt;/li&gt;
+                                                                    &lt;li&gt;&lt;a href="#" class="social-icon icon-gray"&gt;&lt;i class="fa fa-twitter"&gt;&lt;/a&gt;&lt;/i&gt;&lt;/li&gt;
+                                                                    &lt;li&gt;&lt;a href="#" class="social-icon icon-gray"&gt;&lt;i class="fa fa-google-plus"&gt;&lt;/a&gt;&lt;/i&gt;&lt;/li&gt;
+                                                                &lt;/ul&gt;
+                                                            &lt;/div&gt;
+
+                                                        &lt;/div&gt;
+
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+
+                                    &lt;/section&gt;
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <h3>OWL Carousel</h3>
+                    <p></p>
+                    <pre>
+                        <code class="javascript" data-trim data-noescape>
+        /*===============================================
+                                Team
+        ================================================*/
+        $(document).ready(function(){
+
+            $("#team-members").owlCarousel({
+                items: 3,
+                autoplay: true,
+                smartSpeed: 700,
+                loop: true,
+                autoplayHoverPause: true
+            });
+
+        });
+
+                        </code>
+                    </pre>
+                </section>
+
+                <section>
+                    <h3>Update HTML</h3>
+                    <pre>
+                        <code class="html" data-trim data-noescape>
+                                &lt;div id="team-members" class="owl-carousel owl-theme"&gt;
+                        </code>
+                    </pre>
+                </section>
+
+                <section>
+                    <h3>Agregando CSS</h3>
+                    <pre>
+                        <code class="css" data-trim data-noescape>
+        /*===============================================
+                                Team
+        ================================================*/
+        .team-member {
+            margin: 0 15px;
+        }
+
+        .team-member-info {
+            padding: 10px 0 30px 0;
+        }
+
+
+        h4.team-member-name {
+                font-size: 22px;
+                font-weight: 700;
+                letter-spacing: 1px;
+                padding-top: 2px;
+        }
+
+        h4.team-member-designation {
+                color: $mediumTurquoise;
+                font-size: 15px;
+                font-weight: 700;
+                font-style: italic;
+                letter-spacing: 1px;
+                margin-top: 5px;
+        }
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <h3>Update CSS#2</h3>
+                    <pre>
+                        <code class="css" data-trim data-noescape>
+        /*===============================================
+                                Social
+        ================================================*/
+
+        .social-list {
+            padding-left: 0;
+
+            li {
+                list-style: none;
+                display: inline-block;
+                width: 32px;
+                height: 32px;
+                margin-right: 6px;
+                margin-top: 10px;
+            }
+        }
+
+        .social-icon {
+
+            i {
+                font-size: 17px;
+
+                &:hover {
+                    color: $mediumTurquoise;
+                }
+            }
+
+
+        }
+
+        .icon-gray {
+
+            i {
+                color: $steelGrey;
+            }
+
+        }
+                        </code>
+                    </pre>
+                </section>
+            </section>
+
+
         </div>
     </div>
 
