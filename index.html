@@ -2530,6 +2530,976 @@
                 </section>
             </section>
 
+            <section>
+                <section>
+                    <p><i class="fa fa-paint-brush"></i></p>
+                    <h3>Section Pricing</h3>
+                </section>
+                <section>
+                    <h3>Agregando HTML</h3>
+                    <pre>
+                        <code class="html" data-trim data-noescape>
+                            &lt;section id="pricing"&gt;
+
+                                &lt;div class="content-box"&gt;
+
+                                    &lt;div class="content-title wow animated fadeInDown" data-wow-delay="1s" data-wow-delay=".5s"&gt;
+                                        &lt;h3&gt;our Pricing &lt;/h3&gt;
+                                        &lt;div class="content-title-underline"&gt; &lt;/div&gt;
+                                    &lt;/div&gt;
+
+                                    &lt;div class="container"&gt;
+
+                                        &lt;div class="row"&gt;
+                                            &lt;div class="col-md-4 wow animated zoomIn" data-wow-delay="1s" data-wow-delay=".5s"&gt;
+                                                &lt;div class="pricing-box text-center"&gt;
+                                                    &lt;h4 class="pricing-title"&gt;
+                                                       Basic
+                                                    &lt;/h4&gt;
+                                                    &lt;h3 class=pricing-value""&gt;
+                                                       49 &lt;sup&gt;$ &lt;/sup&gt;
+                                                    &lt;/h3&gt;
+                                                    &lt;ul class="pricing-spec"&gt;
+                                                        &lt;li&gt;
+                                                            &lt;p&gt;500 Emails &lt;/p&gt;
+                                                        &lt;/li&gt;
+                                                        &lt;li&gt;
+                                                            &lt;p&gt;5GB Disk Space &lt;/p&gt;
+                                                        &lt;/li&gt;
+                                                        &lt;li&gt;
+                                                            &lt;p&gt;5BG Banwidth &lt;/p&gt;
+                                                        &lt;/li&gt;
+                                                        &lt;li&gt;
+                                                            &lt;p&gt;Unlimited Domains &lt;/p&gt;
+                                                        &lt;/li&gt;
+                                                    &lt;/ul&gt;
+
+                                                    &lt;div class="pricing-btn"&gt;
+                                                        &lt;a class="btn btn-lg btn-general btn-blue" href="#" role="button"&gt;Purchase &lt;/a&gt;
+                                                    &lt;/div&gt;
+
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class="col-md-4 wow animated bounceInUp" data-wow-delay="1s" data-wow-delay=".5s"&gt;
+                                                &lt;div class="pricing-box pricing-box-lg text-center"&gt;
+                                                    &lt;h4 class="pricing-title"&gt;
+                                                       Enterprice
+                                                    &lt;/h4&gt;
+                                                    &lt;h3 class=pricing-value""&gt;
+                                                       89 &lt;sup&gt;$ &lt;/sup&gt;
+                                                    &lt;/h3&gt;
+                                                    &lt;ul class="pricing-spec"&gt;
+                                                        &lt;li&gt;
+                                                            &lt;p&gt;200 Emails &lt;/p&gt;
+                                                        &lt;/li&gt;
+                                                        &lt;li&gt;
+                                                            &lt;p&gt;25GB Disk Space &lt;/p&gt;
+                                                        &lt;/li&gt;
+                                                        &lt;li&gt;
+                                                            &lt;p&gt;25BG Banwidth &lt;/p&gt;
+                                                        &lt;/li&gt;
+                                                        &lt;li&gt;
+                                                            &lt;p&gt;Unlimited Domains &lt;/p&gt;
+                                                        &lt;/li&gt;
+                                                    &lt;/ul&gt;
+
+                                                    &lt;div class="pricing-btn"&gt;
+                                                        &lt;a class="btn btn-lg btn-general btn-white" href="#" role="button"&gt;Purchase &lt;/a&gt;
+                                                    &lt;/div&gt;
+
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class="col-md-4 wow animated zoomIn" data-wow-delay="1s" data-wow-delay=".5s"&gt;
+                                                &lt;div class="pricing-box text-center"&gt;
+                                                    &lt;h4 class="pricing-title"&gt;
+                                                       Standard
+                                                    &lt;/h4&gt;
+                                                    &lt;h3 class=pricing-value""&gt;
+                                                       69 &lt;sup&gt;$ &lt;/sup&gt;
+                                                    &lt;/h3&gt;
+                                                    &lt;ul class="pricing-spec"&gt;
+                                                        &lt;li&gt;
+                                                            &lt;p&gt;1500 Emails &lt;/p&gt;
+                                                        &lt;/li&gt;
+                                                        &lt;li&gt;
+                                                            &lt;p&gt;15GB Disk Space &lt;/p&gt;
+                                                        &lt;/li&gt;
+                                                        &lt;li&gt;
+                                                            &lt;p&gt;15BG Banwidth &lt;/p&gt;
+                                                        &lt;/li&gt;
+                                                        &lt;li&gt;
+                                                            &lt;p&gt;Unlimited Domains &lt;/p&gt;
+                                                        &lt;/li&gt;
+                                                    &lt;/ul&gt;
+
+                                                    &lt;div class="pricing-btn"&gt;
+                                                        &lt;a class="btn btn-lg btn-general btn-blue" href="#" role="button"&gt;Purchase &lt;/a&gt;
+                                                    &lt;/div&gt;
+
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+
+                                    &lt;/div&gt;
+
+                                &lt;/div&gt;
+
+                            &lt;/section&gt;
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <h3>Agregando CSS#1</h3>
+                    <pre>
+                        <code class="css" data-trim data-noescape>
+    /*===============================================
+                            Pricing
+    ================================================*/
+
+    .pricing-box {
+        border: 3px solid $mediumTurquoise;
+        padding: 50px 0;
+        margin: 40px 0;
+    }
+
+    .pricing-title {
+        background-color: $mediumTurquoise;
+        color: $white;
+        display: inline-block;
+        padding: 7px 15px;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0 0 30px 0;
+    }
+
+    .pricing-value {
+        font-size: 60px;
+        font-weight: 700;
+    }
+
+    .pricing-value {
+        sup {
+            font-size: 28px;
+            font-weight: normal;
+            vertical-align: super;
+        }
+    }
+
+    .pricing-spec {
+        list-style: none;
+        padding-left: 0;
+        margin: 20px 0 60px 0;
+        li {
+            p{
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+        }
+    }
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <h3>Update CSS#2</h3>
+                    <pre>
+                        <code class="css" data-trim data-noescape>
+                            .pricing-box-lg {
+                                padding: 90px 0;
+                                margin: 0;
+                                background-color: $mediumTurquoise;
+
+                                h4{
+                                    color: $mediumTurquoise;
+                                    background-color: $white;
+                                }
+
+                                ul {
+                                    li {
+                                        p {
+                                            color: $white;
+                                        }
+                                    }
+                                }
+                            }
+                        </code>
+                    </pre>
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <p><i class="fa fa-paint-brush"></i></p>
+                    <h3>Section Stats</h3>
+                </section>
+
+                <section>
+                    <h3>Agregando HTML</h3>
+                    <pre>
+                        <code>
+                            &lt;section id="stats"&gt;
+
+                                &lt;div id="stats-cover" class="bg-parallax"&gt;
+
+                                    &lt;div class="content-box"&gt;
+
+                                        &lt;div class="content-title content-title-white wow animated fadeInDown" data-wow-delay="1s" data-wow-delay=".5s"&gt;
+                                            &lt;h3&gt;We never Stop Improving&lt;/h3&gt;
+                                            &lt;div class="content-title-underline"&gt;&lt;/div&gt;
+                                        &lt;/div&gt;
+
+                                        &lt;div class="container"&gt;
+
+                                            &lt;div class="row text-center wow animated bounceInLeft" data-wow-delay="1s" data-wow-delay=".5s"&gt;
+                                                &lt;div class="col-md-3"&gt;
+                                                    &lt;div class="stats-item"&gt;
+                                                        &lt;i class="fa fa-cloud-download fa-5x"&gt;&lt;/i&gt;
+                                                        &lt;h2&gt;
+                                                            &lt;span class="counter"&gt;1598&lt;/span&gt;
+                                                            &lt;span&gt;+&lt;/span&gt;
+                                                        &lt;/h2&gt;
+                                                        &lt;p&gt;Downloads&lt;/p&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="col-md-3"&gt;
+                                                    &lt;div class="stats-item"&gt;
+                                                        &lt;i class="fa fa-star-o fa-5x"&gt;&lt;/i&gt;
+                                                        &lt;h2&gt;
+                                                            &lt;span class="counter"&gt;3500&lt;/span&gt;
+                                                            &lt;span&gt;+&lt;/span&gt;
+                                                        &lt;/h2&gt;
+                                                        &lt;p&gt;Awards&lt;/p&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="col-md-3"&gt;
+                                                    &lt;div class="stats-item"&gt;
+                                                        &lt;i class="fa fa-heart-o fa-5x"&gt;&lt;/i&gt;
+                                                        &lt;h2&gt;
+                                                            &lt;span class="counter"&gt;1199&lt;/span&gt;
+                                                            &lt;span&gt;+&lt;/span&gt;
+                                                        &lt;/h2&gt;
+                                                        &lt;p&gt;Likes&lt;/p&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="col-md-3"&gt;
+                                                    &lt;div class="stats-item"&gt;
+                                                        &lt;i class="fa fa-check fa-5x"&gt;&lt;/i&gt;
+                                                        &lt;h2&gt;
+                                                            &lt;span class="counter"&gt;2200&lt;/span&gt;
+                                                            &lt;span&gt;+&lt;/span&gt;
+                                                        &lt;/h2&gt;
+                                                        &lt;p&gt;Recomended&lt;/p&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+
+                                        &lt;/div&gt;
+
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/section&gt;
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <h3>Agregando CSS#1</h3>
+                    <pre>
+                        <code class="css" data-trim data-noescape>
+    /*===============================================
+                            Stats
+    ================================================*/
+
+    #stats-cover {
+        background-image: url("../img/bg-stats.jpg");
+    }
+
+    #stats {
+        .content-box {
+            background-color: rgba(0, 0, 0, .8);
+        }
+    }
+
+    .stats-item {
+        padding: 100px 0;
+
+        i {
+            color: $mediumTurquoise;
+        }
+
+        h2 {
+            color: $white;
+            font-size: 35px;
+            font-weight: 700;
+            margin-top: 15px;
+            margin-bottom: 1px;
+        }
+
+        p {
+            color: $white;
+            text-transform: uppercase;
+            font-weight: 300;
+            margin-top: 0;
+        }
+    }
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <h3>Update CSS#2</h3>
+                    <pre>
+                        <code class="css" data-trim data-noescape>
+            /*===============================================
+                                Content
+            ================================================*/
+            .content-title-white h3 {
+                color: $white;
+            }
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <h3>Animation Counter</h3>
+                    <p><a href="http://bfintal.github.io/Counter-Up/demo/demo.html" target="_blank">Counter UP</a> - custom.js</p>
+                    <pre>
+                        <code class="javascript" data-trim data-noescape>
+        /*===============================================
+                                Stats
+        ================================================*/
+        $(document).ready(function(){
+
+            $(".counter").counterUp({
+                delay: 10,
+                time: 3000
+            });
+
+        });
+                        </code>
+                    </pre>
+                </section>
+            </section>
+
+            <section>
+                <section>
+                        <p><i class="fa fa-paint-brush"></i></p>
+                        <h3>Section Clients</h3>
+                </section>
+                <section>
+                    <h3>Agregando HTML</h3>
+                    <pre>
+                        <code class="html" data-trim data-noescape>
+                                &lt;section id="clients"&gt;
+
+                                        &lt;div class="content-box"&gt;
+
+                                            &lt;div class="content-title wow animated fadeInDown" data-wow-delay="1s" data-wow-delay=".5s"&gt;
+                                                &lt;h3&gt;Clients&lt;/h3&gt;
+                                                &lt;div class="content-title-underline"&gt;&lt;/div&gt;
+                                            &lt;/div&gt;
+
+                                            &lt;div class="container"&gt;
+
+                                                &lt;div class="row wow animated bounceInLeft" data-wow-delay="1s" data-wow-delay=".5s"&gt;
+                                                    &lt;div class="col-md-12"&gt;
+                                                        &lt;div id="clients-list" class="owl-carousel owl-theme"&gt;
+                                                            &lt;div class="cliente"&gt;
+                                                                &lt;img src="img/client/logos/logo-1.jpg" class="img-responsive" alt="cliente"&gt;
+                                                            &lt;/div&gt;
+                                                            &lt;div class="cliente"&gt;
+                                                                &lt;img src="img/client/logos/logo-2.jpg" class="img-responsive" alt="cliente"&gt;
+                                                            &lt;/div&gt;
+                                                            &lt;div class="cliente"&gt;
+                                                                &lt;img src="img/client/logos/logo-3.jpg" class="img-responsive" alt="cliente"&gt;
+                                                            &lt;/div&gt;
+                                                            &lt;div class="cliente"&gt;
+                                                                &lt;img src="img/client/logos/logo-4.jpg" class="img-responsive" alt="cliente"&gt;
+                                                            &lt;/div&gt;
+                                                            &lt;div class="cliente"&gt;
+                                                                &lt;img src="img/client/logos/logo-5.jpg" class="img-responsive" alt="cliente"&gt;
+                                                            &lt;/div&gt;
+                                                            &lt;div class="cliente"&gt;
+                                                                &lt;img src="img/client/logos/logo-6.jpg" class="img-responsive" alt="cliente"&gt;
+                                                            &lt;/div&gt;
+                                                            &lt;div class="cliente"&gt;
+                                                                &lt;img src="img/client/logos/logo-7.jpg" class="img-responsive" alt="cliente"&gt;
+                                                            &lt;/div&gt;
+                                                            &lt;div class="cliente"&gt;
+                                                                &lt;img src="img/client/logos/logo-8.jpg" class="img-responsive" alt="cliente"&gt;
+                                                            &lt;/div&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+
+                                            &lt;/div&gt;
+
+                                        &lt;/div&gt;
+
+                                    &lt;/section&gt;
+                        </code>
+                    </pre>
+                </section>
+
+                <section>
+                    <h3>Agregando CSS#1</h3>
+                    <pre>
+                        <code class="css" data-trim data-noescape>
+            /*===============================================
+                                Clients
+            ================================================*/
+
+            .client {
+                padding: 40px 0;
+            }
+                        </code>
+                    </pre>
+                </section>
+
+                <section>
+                    <h3>Animation Carousel</h3>
+                    <pre>
+                        <code class="javascript" data-trim data-noescape>
+                            /*===============================================
+                                                    Clients
+                            ================================================*/
+                            $(document).ready(function(){
+
+                                $("#clients-list").owlCarousel({
+                                    items: 6,
+                                    autoplay: true,
+                                    smartSpeed: 700,
+                                    loop: true,
+                                    autoplayHoverPause: true
+                                });
+
+                            });
+                        </code>
+                    </pre>
+                </section>
+
+            </section>
+
+            <section>
+                <section>
+                    <p><i class="fa fa-paint-brush"></i></p>
+                    <h3>Section Contacto</h3>
+                </section>
+                <section>
+                    <h3>Agregando HTML#1</h3>
+                    <pre>
+                        <code class="html" data-trim data-noescape>
+                                &lt;footer&gt;
+                                    &lt;div id="contact"&gt;
+                                        &lt;div class="container"&gt;
+
+                                            &lt;div class="row"&gt;
+
+                                                &lt;div class="col-md-6"&gt;
+                                                    &lt;div id="contact-left"&gt;
+
+                                                        &lt;h3&gt;Vesco&lt;/h3&gt;
+
+                                                        &lt;p&gt;We believe in
+                                                            &lt;strong&gt;Simple&lt;/strong&gt;,
+                                                            &lt;strong&gt;Clean&lt;/strong&gt; &
+                                                            &lt;strong&gt;Modern&lt;/strong&gt; Desing Standards with Respponsive Approach. Browse the amazing work of our company&lt;/p&gt;
+
+                                                        &lt;div id="contact-info"&gt;
+                                                            &lt;address&gt;
+                                                                &lt;strong&gt;Headquarters&lt;/strong&gt;
+                                                                &lt;br&gt;
+                                                                &lt;p&gt;221 Jockey Hollow, Suite 600
+                                                                    &lt;br&gt; Smithtown, NY 11787&lt;/p&gt;
+                                                            &lt;/address&gt;
+                                                            &lt;div id="phone-fax-email"&gt;
+                                                                &lt;p&gt;
+                                                                    &lt;strong&gt;Phone:&lt;/strong&gt;
+                                                                    &lt;span&gt; (96) 9874 5241 &lt;/span&gt;
+                                                                    &lt;br&gt;
+                                                                    &lt;strong&gt;Fax:&lt;/strong&gt;
+                                                                    &lt;span&gt; (96) 321 9871 &lt;/span&gt;
+                                                                    &lt;br&gt;
+                                                                    &lt;strong&gt;Email:&lt;/strong&gt;
+                                                                    &lt;span&gt; info@vesco.com &lt;/span&gt;
+                                                                    &lt;br&gt;
+                                                                &lt;/p&gt;
+                                                            &lt;/div&gt;
+                                                        &lt;/div&gt;
+                                                        &lt;ul class="social-list"&gt;
+                                                            &lt;li&gt;
+                                                                &lt;a href="#" class="social-icon icon-white"&gt;
+                                                                    &lt;i class="fa fa-facebook"&gt;&lt;/i&gt;
+                                                                &lt;/a&gt;
+                                                            &lt;/li&gt;
+                                                            &lt;li&gt;
+                                                                &lt;a href="#" class="social-icon icon-white"&gt;
+                                                                    &lt;i class="fa fa-twitter"&gt;&lt;/i&gt;
+                                                                &lt;/a&gt;
+                                                            &lt;/li&gt;
+                                                            &lt;li&gt;
+                                                                &lt;a href="#" class="social-icon icon-white"&gt;
+                                                                    &lt;i class="fa fa-youtube-play"&gt;&lt;/i&gt;
+                                                                &lt;/a&gt;
+                                                            &lt;/li&gt;
+                                                            &lt;li&gt;
+                                                                &lt;a href="#" class="social-icon icon-white"&gt;
+                                                                    &lt;i class="fa fa-google-plus"&gt;&lt;/i&gt;
+                                                                &lt;/a&gt;
+                                                            &lt;/li&gt;
+                                                        &lt;/ul&gt;
+
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="col-md-6"&gt;
+                                                    &lt;div&gt;
+                                                        Form
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+
+                                            &lt;/div&gt;
+
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+
+                                &lt;/footer&gt;
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <h3>Agregando HTML#2</h3>
+                    <pre>
+                        <code class="html" data-trim data-noescape>
+                                    &lt;div class="contact-right"&gt;
+
+                                        &lt;h3&gt;Contact Us&lt;/h3&gt;
+                                        &lt;form action="#"&gt;
+                                            &lt;input type="text" name="full-name" placeholder="Full Name" class="form-control"&gt;
+                                            &lt;input type="text" name="email" placeholder="Email Address" class="form-control"&gt;
+                                            &lt;textarea name="message" placeholder="Message..." rows="5" class="form-control"&gt;&lt;/textarea&gt;
+
+                                            &lt;div id="send-btn"&gt;
+                                                &lt;a class="btn btn-lg btn-general btn-white" role="button" href="#"&gt;Send&lt;/a&gt;
+                                            &lt;/div&gt;
+                                        &lt;/form&gt;
+
+                                    &lt;/div&gt;
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <h3>Agregando CSS#1</h3>
+                    <pre>
+                        <code class="css" data-trim data-noescape>
+        /*===============================================
+                                Contact
+        ================================================*/
+
+        footer {
+            background-color: $steelGrey;
+            padding-top: 30px;
+            border-top: 5px solid rgba(0, 0, 0, 0.1);
+        }
+
+        #contact-left {
+            h3 {
+                color: $white;
+                font-size: 27px;
+                font-weight: 700;
+            }
+
+            p {
+                color: $white;
+                margin-bottom: 30px;
+            }
+        }
+
+        #contact-info {
+            background-image: url("../img/world-map.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        address {
+            color: $white;
+        }
+
+        address strong, #phone-fax-email strong {
+            letter-spacing: 1px;
+        }
+
+
+        /*===============================================
+                                Social
+        ================================================*/
+
+        .icon-white {
+
+            i {
+                color: $white;
+            }
+
+        }
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <h3>Agregando CSS#2</h3>
+                    <pre>
+                        <code class="css" data-trim data-noescape>
+                                form .form-control {
+                                    background: transparent;
+                                    border-radius: 0;
+                                    border-color: $white;
+                                    font-size: 17px;
+                                    padding: 8px 16px;
+                                    margin-bottom: 20px;
+                                    color: $white;
+                                }
+                        </code>
+                    </pre>
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <p><i class="fa fa-paint-brush"></i></p>
+                    <h3>Section Footer</h3>
+                </section>
+
+                <section>
+                    <h3>Agregando HTML#1</h3>
+                    <pre>
+                        <code class="html" data-trim data-noescape>
+                            &lt;div id="footer-bottom"&gt;
+                                &lt;div class="container"&gt;
+                                    &lt;div class="row"&gt;
+                                        &lt;div class="col-md-6"&gt;
+
+                                            &lt;div id="footer-copyrights"&gt;
+                                                &lt;p&gt;Copyrights © 2017 All Rights Reserved by Vesco Inc.&lt;/p&gt;
+                                            &lt;/div&gt;
+
+                                        &lt;/div&gt;
+                                        &lt;div class="col-md-6"&gt;
+
+                                            &lt;div id="footer-menu"&gt;
+                                                &lt;ul&gt;
+                                                    &lt;li&gt;
+                                                        &lt;a href="#home"&gt;Home&lt;/a&gt;/
+                                                    &lt;/li&gt;
+                                                    &lt;li&gt;
+                                                        &lt;a href="#services"&gt;Services&lt;/a&gt;/
+                                                    &lt;/li&gt;
+                                                    &lt;li&gt;
+                                                        &lt;a href="#work"&gt;Work&lt;/a&gt;/
+                                                    &lt;/li&gt;
+                                                    &lt;li&gt;
+                                                        &lt;a href="#team"&gt;Team&lt;/a&gt;/
+                                                    &lt;/li&gt;
+                                                    &lt;li&gt;
+                                                        &lt;a href="#testimonials"&gt;Testimonials&lt;/a&gt;/
+                                                    &lt;/li&gt;
+                                                    &lt;li&gt;
+                                                        &lt;a href="#pricing"&gt;Pricing&lt;/a&gt;/
+                                                    &lt;/li&gt;
+                                                    &lt;li&gt;
+                                                        &lt;a href="#stats"&gt;Stats&lt;/a&gt;
+                                                    &lt;/li&gt;
+                                                &lt;/ul&gt;
+                                            &lt;/div&gt;
+
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        </code>
+                    </pre>
+                </section>
+
+                <section>
+                    <h3>Agregando CSS#1</h3>
+                    <pre>
+                        <code class="css" data-trim data-noescape>
+    /*===============================================
+                            Footer
+    ================================================*/
+
+    #footer-bottom {
+        background-color: rgba(0, 0, 0, 0.1);
+        padding: 30px 0;
+        margin-top: 60px;
+
+        #footer-copyrights {
+
+            p {
+                margin: 0;
+                color: $white;
+            }
+
+        }
+
+        #footer-menu {
+            float: left;
+            color: $white;
+            font-size: 16px;
+            font-weight: 300;
+
+            ul {
+                list-style: none;
+                padding-left: 0;
+                margin: 0;
+
+                li {
+                    display: inline-block;
+                }
+            }
+
+            a {
+                color: $white;
+                font-size: 16px;
+                font-weight: 300;
+                margin: 0 10px;
+                text-decoration: none;
+
+                &:hover {
+                    color: $mediumTurquoise;
+                }
+            }
+        }
+
+    }
+                        </code>
+                    </pre>
+                </section>
+
+            </section>
+
+            <section>
+                <section>
+                    <p><i class="fa fa-paint-brush"></i></p>
+                    <h3>Navigation</h3>
+                </section>
+                <section>
+                    <h3>Agregando HTML</h3>
+                    <pre>
+                        <code class="html" data-trim data-noescape>
+                            &lt;header&gt;
+                                &lt;nav class="navbar vesco-top-nav navbar-fixed-top" role="navigation"&gt;
+                                    &lt;div class="container-fluid"&gt;
+                                        &lt;div class="vesco-nav-wrapper"&gt;
+                                            &lt;div class="navbar-header"&gt;
+
+                                                &lt;button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#vesco-menu"&gt;
+                                                    &lt;span class="sr-only"&gt;Toggle navigation&lt;/span&gt;
+                                                    &lt;span class="icon-bar"&gt;&lt;/span&gt;
+                                                    &lt;span class="icon-bar"&gt;&lt;/span&gt;
+                                                    &lt;span class="icon-bar"&gt;&lt;/span&gt;
+                                                &lt;/button&gt;
+
+                                                &lt;a class="navbar-brand" href="#home"&gt;
+                                                    &lt;img src="img/logo.png" alt="logo"&gt;
+                                                &lt;/a&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class="collapse navbar-collapse" id="vesco-menu"&gt;
+                                                &lt;ul class="nav navbar-nav"&gt;
+                                                    &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                                                    &lt;li&gt;&lt;a href="#services"&gt;Services&lt;/a&gt;&lt;/li&gt;
+                                                    &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+                                                    &lt;li&gt;&lt;a href="#work"&gt;Work&lt;/a&gt;&lt;/li&gt;
+                                                    &lt;li&gt;&lt;a href="#team"&gt;Team&lt;/a&gt;&lt;/li&gt;
+                                                    &lt;li&gt;&lt;a href="#pricing"&gt;Pricing&lt;/a&gt;&lt;/li&gt;
+                                                    &lt;li&gt;&lt;a href="#stats"&gt;Stats&lt;/a&gt;&lt;/li&gt;
+                                                    &lt;li&gt;&lt;a href="#clients"&gt;Clients&lt;/a&gt;&lt;/li&gt;
+                                                    &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+                                                &lt;/ul&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/nav&gt;
+                            &lt;/header&gt;
+                        </code>
+                    </pre>
+                </section>
+
+                <section>
+                    <h3>Agregando CSS</h3>
+                    <pre>
+                        <code class="css" data-trim data-noescape>
+        /*===============================================
+                                Navigation
+        ================================================*/
+
+        .navbar {
+            padding: 20px 0;
+        }
+
+        .vesco-top-nav {
+            background: rgba(0,0,0, 0.7);
+            padding: 7px 0;
+        }
+
+        .vesco-nav-wrapper {
+            padding: 0 85px;
+        }
+
+        .navbar-nav {
+            float: right;
+
+            li {
+                a {
+                    color:$white;
+                    font-size: 15px;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    font-weight: 700;
+
+                    &:hover, &:focus {
+                        background: none;
+                        color: $mediumTurquoise;
+                    }
+                }
+
+            }
+        }
+
+        .navbar-toggle {
+            background-color: rgba(0,0,0, 0.1);
+            border: 1px solid $white;
+            border-radius: 0;
+
+            .icon-bar {
+                background-color: $white;
+            }
+        }
+
+        .navbar-collapse {
+            max-height: none !important;
+        }
+                        </code>
+                    </pre>
+                </section>
+
+            </section>
+
+            <section>
+                <section>
+                    <p><i class="fa fa-paint-brush"></i></p>
+                    <h3>Scrollspy</h3>
+                </section>
+
+                <section>
+                    <h3>Agregando HTML</h3>
+                    <pre>
+                        <code class="html" data-trim data-noescape>
+                            &lt;body data-spy="scroll" data-target=".vesco-top-nav"&gt;
+                        </code>
+                    </pre>
+                </section>
+
+                <section>
+                    <h3>Agregando CSS</h3>
+                    <pre>
+                        <code class="css" data-trim data-noescape>
+        /*===============================================
+                        Scroll-Spy
+        ================================================*/
+
+        .vesco-top-nav {
+            ul.navbar-nav {
+                li.active {
+                    a {
+                        color:$mediumTurquoise;
+                    }
+                }
+            }
+        }
+                        </code>
+                    </pre>
+                </section>
+
+            </section>
+
+            <section>
+                <section>
+                    <p><i class="fa fa-paint-brush"></i></p>
+                    <h1>Smooth Scrolling</h1>
+                </section>
+
+                <section>
+                    <h3>Agreando JavaScript</h3>
+                    <pre>
+                        <code class="javascript" data-trim data-noescape>
+                                //No olvidar de colocar la clase smooth-scroll a nuestra etiqueta anchor del NAVBAR
+                                $("a.smooth-scroll").click(function (evento) {
+
+                                    evento.preventDefault();
+
+                                    var section = $(this).attr("href");
+
+                                    $('html,body').animate({
+                                      scrollTop: $(section).offset().top - 64
+                                    }, 1250);
+
+                                });
+                        </code>
+                    </pre>
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <p><i class="fa fa-paint-brush"></i></p>
+                    <h3>Top Button</h3>
+                </section>
+                <section>
+                    <h3>Agregando HTML</h3>
+                    <p>(Footer)</p>
+                    <pre>
+                        <code class="html" data-trim data-noescape>
+                                &lt;a href="#home" id="back-to-top" class="btn btn-sm btn-blue btn-back-to-top smooth-scroll" title="Home" role="button"&gt;&lt;i class="fa fa-angle-up"&gt;&lt;/i&gt;&lt;/a&gt;
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <h3>Agregando CSS</h3>
+                    <pre>
+                        <code class="css" data-trim data-noescape>
+                                .btn-back-to-top {
+                                    position: fixed;
+                                    bottom: 20px;
+                                    right: 20px;
+                                    font-size: 22px;
+                                    padding: 3px 15px;
+                                    border-radius: 0;
+                                    display: none;
+                                }
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <h3>Add Javascript</h3>
+                    <pre>
+                        <code class="javascript" data-trim data-noescape>
+        /*===============================================
+                                Button Top
+        ================================================*/
+
+        $(function(){
+
+            $(window).scroll(function() {
+
+                if($(this).scrollTop() < 50) {
+                    $("#back-to-top").fadeOut();
+                }else{
+                    $("#back-to-top").fadeIn();
+                }
+
+            });
+
+        });
+                        </code>
+                    </pre>
+                </section>
+            </section>
+
 
         </div>
     </div>
