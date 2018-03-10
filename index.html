@@ -2736,7 +2736,7 @@
                 <section>
                     <h3>Agregando HTML</h3>
                     <pre>
-                        <code>
+                        <code class="html" data-trim data-noescape>
                             &lt;section id="stats"&gt;
 
                                 &lt;div id="stats-cover" class="bg-parallax"&gt;
@@ -3500,6 +3500,303 @@
                 </section>
             </section>
 
+            <section>
+                <section>
+                    <p><i class="fab fa-css3-alt fa-2x"></i></p>
+                    <h1>Media Queries</h1>
+                </section>
+
+                <section>
+                    <p><i class="fab fa-css3-alt fa-2x"></i></p>
+                    <h3>Concepto</h3>
+                    <p>Es un módulo CSS3 que permite adaptar la representación del contenido a características del dispositivo como la resolución de pantalla (por ejemplo, un smartphone frente a pantallas de alta definición)</p>
+                </section>
+
+                <section>
+                    <p><i class="fab fa-css3-alt"></i></p>
+                    <h3>Responsive - Testing</h3>
+                    <pre>
+                        <code class="css" data-trim data-noescape>
+                                // Large Devices
+                                @media (min-width:1200px) {
+                                    #home-heading {
+                                        h3 {
+                                            color: blue;
+                                        }
+                                    }
+                                }
+
+                                //Medium Devices
+                                @media (min-width: 992px) and (max-width: 1199px) {
+                                    #home-heading {
+                                        h3 {
+                                            color: yellow;
+                                        }
+                                    }
+                                }
+
+                                //Small Devices
+                                @media (min-width: 768px) and (max-width: 991px) {
+                                    #home-heading {
+                                        h3 {
+                                            color: green;
+                                        }
+                                    }
+                                }
+
+                                // Extra Small
+                                @media (max-width:767px) {
+                                    #home-heading {
+                                        h3 {
+                                            color: red;
+                                        }
+                                    }
+                                }
+
+                                // Extra Small
+                                @media (max-width:480px) {
+                                    #home-heading {
+                                        h3 {
+                                            color: pink;
+                                        }
+                                    }
+                                }
+
+                                // Extra Small
+                                @media (max-width:320px) {
+                                    #home-heading {
+                                        h3 {
+                                            color: purple;
+                                        }
+                                    }
+                                }
+                        </code>
+                    </pre>
+                </section>
+
+                <section>
+                    <p><i class="fab fa-css3-alt"></i></p>
+                    <h3>Large Devices</h3>
+                    <p>Responsive</p>
+                </section>
+
+                <section>
+                    <p><i class="fab fa-css3-alt"></i></p>
+                    <h3>Medium Devices</h3>
+                    <pre>
+                        <code class="css" data-trim data-noescape>
+                                //Medium Devices
+                                @media (min-width: 992px) and (max-width: 1199px) {
+
+                                    .navbar {
+                                        background: rgba(0, 0, 0, .7);
+                                        padding: 0;
+
+                                        .navbar-nav {
+                                            float: left;
+                                        }
+                                    }
+
+                                    .vesco-nav-wrapper {
+                                        padding: 0;
+                                    }
+
+                                }
+                        </code>
+                    </pre>
+                </section>
+
+                <section>
+                    <p><i class="fab fa-css3-alt"></i></p>
+                    <h3>Small Devices</h3>
+                    <pre>
+                        <code class="css" data-trim data-noescape>
+                                //Small Devices
+                                @media (min-width: 768px) and (max-width: 991px) {
+
+                                    .navbar {
+                                        background: rgba(0, 0, 0, .7);
+                                        padding: 0;
+
+                                        .navbar-nav {
+                                            float: left;
+                                        }
+                                    }
+
+                                    .vesco-nav-wrapper {
+                                        padding: 0;
+                                    }
+
+                                    #about-bg-diagonal {
+                                        border-left: 0;
+                                        border-top: 0;
+                                        width: 100%;
+                                        height: 350px;
+                                    }
+
+                                    #about-content-box {
+                                        width: 100%;
+                                        height: 350px;
+                                    }
+
+                                    .stats-item {
+                                        padding: 20px 0;
+                                    }
+
+                                    #footer-copyrights {
+                                        text-align: center;
+                                    }
+
+                                }
+                        </code>
+                    </pre>
+                </section>
+
+                <section>
+                    <p><i class="fab fa-css3-alt"></i></p>
+                    <h3>ExtraSmall Devices</h3>
+                    <pre>
+                        <code class="css" data-trim data-noescape>
+                                // Extra Small
+                                @media (max-width:767px) {
+                                    .navbar {
+                                        background: rgba(0, 0, 0, .7);
+                                        padding: 0;
+                                    }
+                                    .navbar-nav {
+                                        float: left;
+                                    }
+                                    .vesco-nav-wrapper {
+                                        padding: 0;
+                                    }
+                                    /*Home*/
+                                    #home-heading h3 {
+                                        font-size: 24px;
+                                    }
+                                    .btn-general {
+                                        padding: 6px 22px;
+                                        font-size: 14px;
+                                    }
+                                    /*About*/
+                                    #about-bg-diagonal {
+                                        border-left: 0;
+                                        border-top: 0;
+                                        width: 100%;
+                                        height: 350px;
+                                    }
+                                    #about-content-box {
+                                        width: 100%;
+                                        height: 350px;
+                                    }
+                                    /*Work*/
+                                    .img-wrapper img {
+                                        min-width: 100%;
+                                    }
+                                    .stats-item {
+                                        padding: 20px 0;
+                                    }
+                                    #footer-copyrights {
+                                        text-align: center;
+                                    }
+                                }
+                        </code>
+                    </pre>
+                </section>
+
+                <section>
+                    <p><i class="fab fa-css3-alt"></i></p>
+                    <h1>Devices 480px</h1>
+                </section>
+
+                <section>
+                    <p><i class="fab fa-css3-alt"></i></p>
+                    <h3>Devices 320px</h3>
+                    <pre>
+                        <code class="css" data-trim data-noescape>
+                                .content-box {
+                                    padding: 40px 0;
+                                }
+                                .service-item-icon i {
+                                    width: 58px;
+                                    height: 58px;
+                                    padding: 7px;
+                                }
+                                .service-item-title h3 {
+                                    font-size: 17px;
+                                }
+                        </code>
+                    </pre>
+                </section>
+
+
+            </section>
+
+            <section>
+                <section>
+                    <p><i class="fab fa-css3-alt"></i></p>
+                    <h3>Optimizng Website</h3>
+                </section>
+
+                <section>
+                    <p><i class="fab fa-css3-alt"></i></p>
+                    <h1>Image</h1>
+                    <a href="https://compressor.io/" target="_blank"><i class="fas fa-link"></i></a>
+                </section>
+
+                <section>
+                    <p><i class="fab fa-css3-alt"></i></p>
+                    <h1>Favicon</h1>
+                    <a href="https://realfavicongenerator.net/" target="_blank"><i class="fas fa-link"></i></a>
+                </section>
+
+                <section>
+                    <p><i class="fab fa-html5"></i></p>
+                    <h3>Seo</h3>
+                    <pre>
+                        <code class="html" data-trim data-noescape>
+                            &lt;meta name="description" content="Wensite with html5, css3, jquery & bootstrap"&gt;
+                            &lt;meta name="keywords" content="html5, css3, jquery, bootstrap"&gt;
+                        </code>
+                    </pre>
+                </section>
+
+                <section>
+                    <p><i class="fab fa-html5"></i></p>
+                    <h1>Validation HTML</h1>
+                    <a href="https://validator.w3.org/" target="_blank"><i class="fas fa-link"></i></a>
+                </section>
+
+            </section>
+
+            <section>
+                <h1>Prepos</h1>
+                <a href="https://prepros.io/" target="_blank"><i class="fas fa-link"></i></a>
+            </section>
+
+            <section>
+                <h3>Min Archivos</h3>
+                <p>CSS <a href="https://cssminifier.com/" target="_blank">CSS MIN</a></p>
+                <p>Javascript <a href="https://jscompress.com/" target="_blank">JS MIN</a></p>
+            </section>
+
+            <section>
+                <h1>Aplicar Smacss</h1>
+            </section>
+
+            <section>
+                <h1>Investigación</h1>
+                <p><a href="https://www.awwwards.com/websites/clean/" target="_blank">awwwards</a></p>
+            </section>
+
+            <section>
+                <h1>Buenas Prácticas</h1>
+                <p><a href="https://github.com/dev2me/buenas-practicas-frontend" target="_blank">Buenas Prácticas en Diseño y Desarrollo Frontend</a></p>
+            </section>
+
+            <section>
+                <h1>RoadMap 2018</h1>
+                <p><a href="https://codeburst.io/the-2018-web-developer-roadmap-826b1b806e8d" target="_blank">RoadMap</a></p>
+            </section>
 
         </div>
     </div>
